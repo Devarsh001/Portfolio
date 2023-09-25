@@ -84,3 +84,10 @@
         gap: 3vw;
     }
 }
+@media(max-width:850px)
+{
+    .list
+    {
+        padding: 8px;
+    }
+}

@@ -114,7 +114,6 @@ header
 }
 .slider
 {
-    /* height: 40vw; */
     border-radius: 2vw;
     position: relative;
     overflow: hidden;
@@ -137,17 +136,8 @@ header
     display: grid;
     gap: 2.80vw;
 }
-/* .dot
-{
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    display: grid;
-} */
 .headerleft, .headerright
 {
-    height: 7.5vw;
-    width: 7.5vw;
     position: absolute;
     top: 48%;
 }
@@ -251,9 +241,9 @@ header
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 2vw;
-    /* background: url(../img/Chip-Rally_BG.jpeg);
+    background: url(../img/chiprallybg.png);
     background-size: 100% 100%;
-    background-position: center; */
+    background-position: center;
 }
 .chiptuning
 {
@@ -367,6 +357,7 @@ header
 {
     padding: 0 5vw;
     position: relative;
+    overflow: hidden;
 }
 .motorsports img
 {
