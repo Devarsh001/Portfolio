@@ -1,0 +1,26 @@
+@media(max-width:1100px)
+{
+    .social,.navbar{flex-direction: column;line-height: 30px;}
+    .rent_sell_invest{top: 100%;}
+    .info{width: 100%;}
+    .property1{width: 33.33%;}
+    .type1,.agent{width: 50%;}
+    .columncount{column-count: 2;}
+    .gorgeoushome,.fdiv{display: block;}
+    .gorgeoushome1,.gorgeoushome2,.agent{width: 100%;}
+    .transperentdiv{height: 70vh;width: 100%;}
+}
+@media(max-width:850px)
+{
+    span,.nav li,.property,.villa,.villa1,.cus, .latestproperties li{display: block;}
+    .rent_sell_invest{position: static;transform: translate(0,0);line-height: 30px;}
+    .propertiesbyarea{padding-top: 0;}
+    .propery span{display: inline;}
+    .property1{width: 50%;}
+}
+@media(max-width:600px)
+{
+    .property1,.type1,.gorgeoushome2 div{width: 100%;}
+    .columncount{column-count: 1;}
+    .gorgeoushome2{display: block;height: auto;}
+}

@@ -1,0 +1,86 @@
+@media(max-width:1000px)
+{
+    .nav
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+        gap: 1vw;
+    }
+    .buynow
+    {
+        text-align: center;
+    }
+}
+@media(max-width:850px)
+{
+    
+    .h1
+    {
+        font-size: 6vw;
+    }
+    .h2
+    {
+        font-size: 5vw;
+    }
+    .h3
+    {
+        font-size: 4vw;
+    }
+    .h4
+    {
+        font-size: 3vw;
+    }
+    .h5
+    {
+        font-size: 2.5vw;
+    }
+    .h6
+    {
+        font-size: 2vw;
+    }
+    p,button
+    {
+        font-size: 1.5vw;
+    }
+    .aboutusimgtxt, .chiprallyimgs
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .carspecification
+    {
+        display: none;
+    }
+    .scrollformore
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: 5vw;
+        gap: 2vw;
+    }
+    .projectcars
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 5vw;
+    }
+    .links-address
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+    }
+    .footlist
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+    .copyright
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        text-align: center;
+        gap: 3vw;
+    }
+}

@@ -1,0 +1,436 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+
+li{display: inline-block  ;list-style: none;}
+
+a{text-decoration: none;}
+
+h2, h4, h3, h5, .logo, .list li a, .contact a, .contact, .button-two, .emailme form input:last-child, button, a, .skill-name
+
+{color: white;}
+
+h2{font-size: 70px;width: 100%;}p{font-size: 16px;}
+
+h3{font-size: 20px;margin-bottom: 50px;}
+
+h4{font-size: 25px;letter-spacing: 2px;}
+
+p, .skill-per::before, .skill-per::after{color: #fcfc;}
+
+span, .card i, .contactdetails div i, .list li a:hover{color: #f9004d;}
+
+button, .button, .emailme a{background-color: #f9004d;}
+
+button,.button-two{text-decoration: none;border: 2px solid transparent;font-weight: bold;padding: 13px 30px;border-radius: 30px;transition: 0.4s;cursor: pointer;}
+
+.fa{cursor: pointer;}
+
+::placeholder{color: black;}
+
+.button-two:hover, .card .button:hover{background: transparent; border: 2px solid #f9004d;}
+
+/* ---------- Header Start ---------- */
+header
+{
+    height: 100vh;
+    width: 100%;
+    background: url(../images/header-background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 8%;
+}
+.logo
+{
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.list li
+{
+    padding: 10px 25px;
+}
+.list li a, .contact a
+{
+    font-weight: bold ;
+}
+.list li a:hover
+{
+    transition: 0.3s;
+}
+.contact
+{
+    background: #f9004d;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.contact:hover
+{
+    transform: scale(1.2);
+}
+.slider
+{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+.emailme form
+{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+}
+.emailme form input:first-child
+{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+}
+.emailme form input:last-child
+{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: #f9004d;
+    box-shadow: 0 0 5px black;
+    top: 6px;
+    right: 6px;
+}
+
+
+/* ---------- About Start ---------- */
+.about
+{
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    background-color: #101010;
+    display: flex;
+}
+.main img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+.main
+{
+    width: 40%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.about-text
+{
+    width: 60%;
+    padding: 10vh;
+    padding-top: 10vh;
+}
+.about-text h2
+{
+    margin-bottom: 20px;
+}
+.about-text h5
+{
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p
+{
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+button:hover
+{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+/* ---------- My Skills Start ---------- */
+.skills
+{
+    background-color: #191919;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 20px;
+}
+.skill
+{
+    width: 49%;
+    padding: 10px 50px;
+}
+.skills h2
+{
+    text-align: center;
+}
+.skill-name
+{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar
+{
+    height: 14px;
+    background: black;
+    border-radius: 10px;
+}
+.skill-per
+{
+    height: 14px;
+    background: #f9004d;
+    border-radius: 10px;
+    position: relative;
+    animation: fillbars 2.5s 1;
+}
+.skill-per::before
+{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: transparent;
+    border-radius: 10px;
+    top: -35px;
+    right: 0;
+}
+.skill-per::after
+{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    top: -20px;
+    right: 0;
+    border-radius: 2px;
+}
+@keyframes fillbars
+{
+    from{width: 0;}
+    to{width: 100%;} 
+}
+
+/* ---------- My Projects Start ---------- */
+.myproject
+{
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 0;
+}
+.myproject h2
+{
+    text-align: center;
+}
+.projects
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.projects div
+{
+    width: 31%;
+}
+.beleasing, .bemechanic, .wpresidence
+{
+    text-align: center;
+}
+.beleasing img, .bemechanic img, .wpresidence img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+    cursor: pointer;
+    filter: brightness(50%);
+    border-radius: 20px;
+}
+
+/* ---------- Services Start ---------- */
+.servies
+{
+    background-color: #191919;
+    width: 100%;
+    padding: 100px 0;
+}
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+.card
+{
+    width: 31%;
+    padding: 20px;
+    background: #101010;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i
+{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+}
+h5
+{
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.para p
+{
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button
+{
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* ---------- Contact Me Start ---------- */
+
+.contactme
+{
+    width: 100%;
+    background: #101010;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 0;
+}
+.contactme h2
+{
+    text-align: center;
+}
+.contactdetails
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.contactdetails div
+{
+    width: 32%;
+    background-color: #191919;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.contactdetails div i
+{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+}
+.inquiryform
+{
+    display: flex;
+    width: 85%;
+    margin: 30px auto;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.inquiryform div
+{
+    width: 50%;
+}
+.contactmeing
+{
+    height: 600px;
+    overflow: hidden;
+}
+.contactmeing img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.form
+{
+    display: flex;
+}
+.form form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #191919;
+    padding: 50px;
+    width: 100%;
+}
+.form input
+{
+    width: 100%;
+    display: block;
+    height: 30px;
+    padding: 20px 5px;
+    outline: none;
+}
+
+/* Footer Start */
+footer
+{
+    background: #191919;
+    padding: 60px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social
+{
+    display: flex;
+    gap: 15px;
+}
