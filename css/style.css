@@ -273,6 +273,8 @@ button:hover
 .beleasing, .bemechanic, .wpresidence
 {
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 .beleasing img, .bemechanic img, .wpresidence img
 {
@@ -284,6 +286,37 @@ button:hover
     cursor: pointer;
     filter: brightness(50%);
     border-radius: 20px;
+}
+.beleasing::after
+{
+    content: "Beleasing Cars, Using Flex, Responsive at 1100px, 900px, 700px";
+}
+.bemechanic::after
+{
+    content: "BeMechanic, Using Grid, Responsive at 1100px, 850px";
+}
+.wpresidence::after
+{
+    content: "WP-Residence, Using Flex, Responsive at 1100px, 850px, 600px";
+}
+.beleasing::after, .bemechanic::after, .wpresidence::after
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    transition: 0.5s;
+    background: #f9004d;
+    text-align: center;
+    opacity: 0;
+    border-radius: 20px;
+}
+.beleasing:hover::after, .bemechanic:hover::after, .wpresidence:hover::after
+{
+    opacity: 0.6;
 }
 
 /* ---------- Services Start ---------- */
