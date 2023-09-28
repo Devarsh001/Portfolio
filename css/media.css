@@ -1,0 +1,75 @@
+@media(max-width:1120px)
+{
+    .nav, .skills
+    {
+        flex-direction: column;
+    }
+    .skills
+    {
+        align-items: center;
+        padding: 50px;
+    }
+
+}
+@media(max-width:900px)
+{
+    .about, .skills, .myproject, .services, .contactme, .box
+    {
+        padding: 50px;
+    }
+    .about-text
+    {
+        padding: 12vh 2vh 0 2vh;
+    }
+    .projects
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .projects div
+    {
+        width: 35%;
+    }
+    footer, .box
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contactdetails
+    {
+        justify-content: center;
+        gap: 20px;
+    }
+    .contactdetails div, .card
+    {
+        width: 60%;
+    }
+    .skill
+    {
+        width: 80%;
+    }
+        .slider {
+            bottom: 30%;
+        }
+}
+@media(max-width:650px)
+{
+    .about, .skills, .myproject, .servies, .contactme
+    {
+        padding: 50px 15px;
+    }
+    .list li
+    {
+        padding: 10px;
+    }
+    .projects div
+    {
+        width: 80%;
+    }
+    .skill,.card, .contactdetails div, .inquiryform
+    {
+        width: 100%;
+    }
+}

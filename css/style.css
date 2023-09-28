@@ -16,11 +16,11 @@ h2, h4, h3, h5, .logo, .list li a, .contact a, .contact, .button-two, .emailme f
 
 {color: white;}
 
-h2{font-size: 70px;width: 100%;}p{font-size: 16px;}
+h2{font-size: 70px;width: 100%;}p{font-size: 14px;}
 
-h3{font-size: 20px;margin-bottom: 50px;}
+h3{font-size: 25px;margin-bottom: 50px;}
 
-h4{font-size: 25px;letter-spacing: 2px;}
+h4{font-size: 30px;letter-spacing: 2px;}
 
 p, .skill-per::before, .skill-per::after{color: #fcfc;}
 
@@ -28,7 +28,7 @@ span, .card i, .contactdetails div i, .list li a:hover{color: #f9004d;}
 
 button, .button, .emailme a{background-color: #f9004d;}
 
-button,.button-two{text-decoration: none;border: 2px solid transparent;font-weight: bold;padding: 13px 30px;border-radius: 30px;transition: 0.4s;cursor: pointer;}
+button,.button-two{text-decoration: none;border: 2px solid transparent;font-weight: bold;padding: 13px 25px;border-radius: 30px;transition: 0.4s;cursor: pointer;}
 
 .fa{cursor: pointer;}
 
@@ -36,14 +36,19 @@ button,.button-two{text-decoration: none;border: 2px solid transparent;font-weig
 
 .button-two:hover, .card .button:hover{background: transparent; border: 2px solid #f9004d;}
 
-header, .about, .skills, .myproject, .servies
+.about,
+.skills,
+.myproject,
+.services,
+.contactme
 {
-    height: 100vh;
+    padding: 100px;
 }
 
 /* ---------- Header Start ---------- */
 header
 {
+    height: 100vh;
     width: 100%;
     background: url(../images/header-background.jpeg);
     background-size: cover;
@@ -100,7 +105,7 @@ header
     width: 380px;
     max-width: 100%;
     position: relative;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 .emailme form input:first-child
 {
@@ -152,7 +157,6 @@ header
 {
     width: 60%;
     padding: 10vh;
-    padding-top: 10vh;
 }
 .about-text h2
 {
@@ -275,6 +279,7 @@ button:hover
     text-align: center;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 .beleasing img, .bemechanic img, .wpresidence img
 {
@@ -287,7 +292,7 @@ button:hover
     filter: brightness(50%);
     border-radius: 20px;
 }
-.beleasing::after
+/* .beleasing::after
 {
     content: "Beleasing Cars, Using Flex, Responsive at 1100px, 900px, 700px";
 }
@@ -298,8 +303,8 @@ button:hover
 .wpresidence::after
 {
     content: "WP-Residence, Using Flex, Responsive at 1100px, 850px, 600px";
-}
-.beleasing::after, .bemechanic::after, .wpresidence::after
+} */
+/* .beleasing::after, .bemechanic::after, .wpresidence::after
 {
     height: 100%;
     width: 100%;
@@ -313,25 +318,27 @@ button:hover
     text-align: center;
     opacity: 0;
     border-radius: 20px;
+    cursor: pointer;
 }
 .beleasing:hover::after, .bemechanic:hover::after, .wpresidence:hover::after
 {
     opacity: 0.6;
-}
+} */
 
 /* ---------- Services Start ---------- */
 .servies
 {
     background-color: #191919;
-    width: 100%;
+    /* width: 100%; */
     padding: 100px 0;
 }
 .box
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 .card
 {
@@ -339,7 +346,6 @@ button:hover
     padding: 20px;
     background: #101010;
     border-radius: 20px;
-    margin: 15px;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -353,12 +359,12 @@ button:hover
 }
 h5
 {
-    font-size: 23px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 .para p
 {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 27px;
     margin-bottom: 25px;
 }
