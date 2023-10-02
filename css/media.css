@@ -9,6 +9,10 @@
         align-items: center;
         padding: 50px;
     }
+    .about,.skills,.myproject,.servies
+    {
+        height: auto;
+    }
 
 }
 @media(max-width:900px)

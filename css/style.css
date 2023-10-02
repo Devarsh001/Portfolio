@@ -45,6 +45,11 @@ button,.button-two{text-decoration: none;border: 2px solid transparent;font-weig
     padding: 100px;
 }
 
+header, .about,.skills,.myproject,.servies
+{
+    height: 100vh;
+}
+
 /* ---------- Header Start ---------- */
 header
 {
