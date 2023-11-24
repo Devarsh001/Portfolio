@@ -24,13 +24,18 @@ h4{font-size: 30px;letter-spacing: 2px;}
 
 p, .skill-per::before, .skill-per::after{color: #fcfc;}
 
-span, .card i, .contactdetails div i, .list li a:hover{color: #f9004d;}
+span, .card i, .contactdetails div i, .list li a:hover,.myname{color: #f9004d;}
 
 button, .button, .emailme a{background-color: #f9004d;}
 
-button,.button-two{text-decoration: none;border: 2px solid transparent;font-weight: bold;padding: 13px 25px;border-radius: 30px;transition: 0.4s;cursor: pointer;}
+button,.button-two{text-decoration: none;border: 2px solid transparent;font-weight: bold;padding: 13px 25px;border-radius: 30px;transition: 0.4s;}
 
-.fa{cursor: pointer;}
+.fa,button,
+.button-two,.logo,.main img,.beleasing,
+.bemechanic,
+.wpresidence,.beleasing img,
+.bemechanic img,
+.wpresidence img,.card .button,.button-two{cursor: pointer;}
 
 ::placeholder{color: black;}
 
@@ -68,7 +73,6 @@ header
 }
 .logo
 {
-    cursor: pointer;
     letter-spacing: 1px;
     font-size: 40px;
     font-weight: bold;
@@ -150,7 +154,6 @@ header
     width: 100%;
     object-fit: cover;
     object-position: center;
-    cursor: pointer;
 }
 .main
 {
@@ -284,7 +287,6 @@ button:hover
     text-align: center;
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 .beleasing img, .bemechanic img, .wpresidence img
 {
@@ -293,7 +295,6 @@ button:hover
     object-fit: cover;
     object-position: center;
     transition: 0.5s;
-    cursor: pointer;
     filter: brightness(50%);
     border-radius: 20px;
 }
@@ -381,7 +382,6 @@ h5
     padding: 9px 22px;
     border-radius: 30px;
     transition: 0.4s;
-    cursor: pointer;
 }
 
 /* ---------- Contact Me Start ---------- */
