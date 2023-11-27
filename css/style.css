@@ -35,7 +35,7 @@ button,.button-two{text-decoration: none;border: 2px solid transparent;font-weig
 .bemechanic,
 .wpresidence,.beleasing img,
 .bemechanic img,
-.wpresidence img,.card .button,.button-two{cursor: pointer;}
+.wpresidence img,.card .button,.button-two,.lStart, .h2{cursor: pointer;}
 
 ::placeholder{color: black;}
 
