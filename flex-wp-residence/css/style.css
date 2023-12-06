@@ -145,6 +145,7 @@ select
     padding: 60px;
     text-align: center;
 }
+
 .content, .info, .property-list, .property-type, .columncount, .villa, .estateagency, .table, .fdiv
 {
     margin: auto;
@@ -161,6 +162,7 @@ select
 {
     align-items: center;
 }
+.villa1{margin: auto;}
 .propertiesbyarea
 {
     /* background: lightgray; */
