@@ -16,11 +16,13 @@ h2, h4, h3, h5, .logo, .list li a, .contact a, .contact, .button-two, .emailme f
 
 {color: white;}
 
-h2{font-size: 70px;width: 100%;}p{font-size: 14px;}
+h2{font-size: 3.5vw;width: 100%;}
 
-h3{font-size: 25px;margin-bottom: 50px;}
+p{font-size: 0.73vw;}
 
-h4{font-size: 30px;letter-spacing: 2px;}
+h3{font-size: 1.302vw;margin-bottom: 50px;}
+
+h4{font-size: 1.56vw;letter-spacing: 2px;}
 
 p, .skill-per::before, .skill-per::after{color: #fcfc;}
 
@@ -74,7 +76,7 @@ header
 .logo
 {
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 2.09vw;
     font-weight: bold;
 }
 .list li
@@ -173,7 +175,7 @@ header
 .about-text h5
 {
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 1.15vw;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
@@ -212,7 +214,7 @@ button:hover
 }
 .skill-name
 {
-    font-size: 18px;
+    font-size: 0.94vw;
     font-weight: 700;
     text-transform: uppercase;
     margin: 20px 0;
@@ -358,19 +360,19 @@ button:hover
 }
 .card i
 {
-    font-size: 50px;
+    font-size: 2.60vw;
     display: block;
     text-align: center;
     margin: 25px 0;
 }
 h5
 {
-    font-size: 25px;
+    font-size: 1.30vw;
     margin-bottom: 15px;
 }
 .para p
 {
-    font-size: 15px;
+    font-size: 0.78vw;
     line-height: 27px;
     margin-bottom: 25px;
 }
@@ -418,7 +420,7 @@ h5
 }
 .contactdetails div i
 {
-    font-size: 50px;
+    font-size: 2.60vw;
     display: block;
     text-align: center;
     margin: 25px 0;
