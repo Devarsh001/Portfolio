@@ -16,13 +16,13 @@ h2, h4, h3, h5, .logo, .list li a, .contact a, .contact, .button-two, .emailme f
 
 {color: white;}
 
-h2{font-size: 3.5vw;width: 100%;}
+h2{font-size: 70px;width: 100%;}
 
-p{font-size: 0.73vw;}
+p{font-size: 14px;}
 
-h3{font-size: 1.302vw;margin-bottom: 50px;}
+h3{font-size: 25px;margin-bottom: 50px;}
 
-h4{font-size: 1.56vw;letter-spacing: 2px;}
+h4{font-size: 30px;letter-spacing: 2px;}
 
 p, .skill-per::before, .skill-per::after{color: #fcfc;}
 
@@ -33,11 +33,11 @@ button, .button, .emailme a{background-color: #f9004d;}
 button,.button-two{text-decoration: none;border: 2px solid transparent;font-weight: bold;padding: 13px 25px;border-radius: 30px;transition: 0.4s;}
 
 .fa,button,
-.button-two,.logo,.main img,.beleasing,
+.button-two,.logo,.beleasing,
 .bemechanic,
 .wpresidence,.beleasing img,
 .bemechanic img,
-.wpresidence img,.card .button,.button-two,.lStart, .h2{cursor: pointer;}
+.wpresidence img,.card .button,.lStart, .h2{cursor: pointer;}
 
 ::placeholder{color: black;}
 
@@ -76,7 +76,7 @@ header
 .logo
 {
     letter-spacing: 1px;
-    font-size: 2.09vw;
+    font-size: 40px;
     font-weight: bold;
 }
 .list li
@@ -107,16 +107,17 @@ header
 .slider
 {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    bottom: 40%;
     left: 8%;
-    transform: translateY(-50%);
+    transform: translateY(50%);
 }
 .emailme form
 {
     width: 380px;
     max-width: 100%;
     position: relative;
-    /* margin-bottom: 60px; */
+    margin-bottom: 20px;
 }
 .emailme form input:first-child
 {
@@ -150,16 +151,13 @@ header
     background-color: #101010;
     display: flex;
 }
-.main img
-{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
 .main
 {
     width: 40%;
+    height: 500px;
+    background-image: url(../images/About2.jpeg);
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -175,7 +173,7 @@ header
 .about-text h5
 {
     letter-spacing: 2px;
-    font-size: 1.15vw;
+    font-size: 22px;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
@@ -214,7 +212,7 @@ button:hover
 }
 .skill-name
 {
-    font-size: 0.94vw;
+    font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 20px 0;
@@ -360,19 +358,19 @@ button:hover
 }
 .card i
 {
-    font-size: 2.60vw;
+    font-size: 50px;
     display: block;
     text-align: center;
     margin: 25px 0;
 }
 h5
 {
-    font-size: 1.30vw;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 .para p
 {
-    font-size: 0.78vw;
+    font-size: 15px;
     line-height: 27px;
     margin-bottom: 25px;
 }
@@ -420,7 +418,7 @@ h5
 }
 .contactdetails div i
 {
-    font-size: 2.60vw;
+    font-size: 50px;
     display: block;
     text-align: center;
     margin: 25px 0;
@@ -440,13 +438,9 @@ h5
 .contactmeing
 {
     height: 600px;
-    overflow: hidden;
-}
-.contactmeing img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background: url(../images/contact\ me.JPG);
+    background-size: cover;
+    background-position: center;
 }
 .form
 {
