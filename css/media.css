@@ -1,94 +1,85 @@
-@media(max-width:1120px)
-{
-    .nav, .skills
-    {
+@media(max-width:1140px) {
+    header {
+        position: relative;
+    }
+    .fa-close {
+        display: block;
+    }
+    header nav .responsiveNav {
         flex-direction: column;
-        padding: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        padding: 50px 100px;
+        text-align: center;
+        background: var(--gray);
     }
-    .skills
-    {
-        align-items: center;
-        padding: 50px;
-    }
-     .about,.skills,.myproject,.servies
-    {
-        height: auto;
-    }
-}
-@media(max-width:900px)
-{
-    .about, .skills, .myproject, .services, .contactme, .box
-    {
-        padding: 50px;
-    }
-    .about-text
-    {
-        padding: 12vh 2vh 0 2vh;
-    }
-    .projects
-    {
+    header .navigate,
+    header .socialLinks {
         flex-direction: column;
-        align-items: center;
+    }
+    .fa-bars {
+        display: block;
+    }
+    .aboutMe .myImage {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mySkills .skills {
+        padding: 20px;
         gap: 10px;
     }
-    .projects div
-    {
-        width: 70%;
+    .mySkills,
+    .myProjects,
+    .contactMe,
+    footer {
+        padding: 40px;
     }
-    footer, .box
-    {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .contactdetails
-    {
-        justify-content: center;
-        gap: 20px;
-    }
-    .contactdetails div, .card
-    {
-        width: 60%;
-    }
-    .skill
-    {
-        width: 80%;
-    }
-    .slider 
-    {
-        bottom: 10%;
-        transform: translateY(0%);
+    .myProjects {
+        padding-bottom: 100px;
     }
 }
-@media(max-width:650px)
-{
-    .about, .skills, .myproject, .servies, .contactme
-    {
-        padding: 50px 15px;
+@media(max-width:960px) {
+    .aboutMe {
+        padding: 50px;
+        /* flex-direction: column; */
     }
-    .about
-    {
+}
+@media(max-width:750px) {
+    .aboutMe, footer {
         flex-direction: column;
-        align-items: center;
     }
-    .list li
-    {
-        padding: 10px;
-    }
-    .projects div, .main
-    {
-        width: 85%;
-    }
-    .skill,.card, .contactdetails div, .inquiryform, .about-text
-    {
+    .aboutMe .myImage,
+    .aboutMe .myText,
+    .mySkills .skills .skill,
+    .cForm {
         width: 100%;
     }
 }
-@media(max-width:400px)
-{
-    h2{font-size: 35px;}
-    h4{font-size: 20px;}
-    /* .inquiryform{flex-direction: column;} */
-    .inquiryform div {width: 100%;}
-    .form form{padding: 0;}
+@media(max-width:540px) {
+    header,
+    .aboutMe,
+    .mySkills,
+    .myProjects,
+    .contactMe,
+    .footer {
+        padding: 20px;
+    }
+    * h1 {
+        font-size: 55px;
+    }
+    footer {
+        text-align: center;
+    }
+    .mySkills .skills .skill {
+        padding: 10px;
+    }
+}
+@media(max-width:425px) {
+    * h4 {
+        font-size: 17px;
+    }
+    header {
+        background-position: right;
+    }
 }

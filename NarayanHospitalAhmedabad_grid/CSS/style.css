@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.blue {
+    color: #40acef;
+}
+
+/* -------------------------------------------------- */
+/* HEADER START */
+header {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    padding: 0 1.05vw;
+}
+header #logo img{
+    cursor: pointer;
+}
+/* ---------- 1 ---------- */
+header #logo img {
+    height: 60%;
+    width: 60%;
+}
+/* ---------- 2 ---------- */
+header nav {
+    display: grid;
+    grid-row: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+header #navbar {
+    border-top: 3px solid #40acef;
+}
+header #navbar ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    font-size: 12px;
+    padding: 0.42vw 0;
+    text-align: center;
+}
+header #navbar ul li a {
+    color: #000000;
+}
+/* 2.1 */
+header #services {
+    display: grid;
+    grid-template-columns: auto auto;
+    border-top: 1px solid #000000;
+    align-items: center;
+}
+header #services #service {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    border-right: 1px solid #000000;
+    gap: 1.05vw;
+    font-size: 13px;
+}
+header #services #service .service1 {
+    padding: 0.67vw 0;
+    border: 3px solid transparent;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+header #services #service .service1 .servicesimg {
+    height: 20px;
+    width: 20px;
+}
+/* 2.2 */
+header #services #search {
+    padding: 0.78vw 35px 0.78vw 0.78vw;
+}
+header #services #search i {
+    border: 1px solid #000000;
+    padding: 0.31vw;
+    border-radius: 3px;
+}
+
+/* Header Hover Effects */
+
+header #services #service .service1:hover {
+    border-bottom: 3px solid #40acef;
+    gap: 7px;
+}
+.blue:hover {
+    color : #000000;
+}
+
+/* -------------------------------------------------- */
+/* Section Start */
+section #hospitalImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section #hospitalImages img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ---------- 2 ---------- */
+section #features {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    padding: 1.05vw 0;
+    cursor: pointer;
+}
+section #features .feature {
+    display: grid;
+    align-items: center;
+    gap: 0.52vw;
+}
+section #features .feature i:hover {
+    color: #40acef;
+    transition: 300ms;
+}
+
+/* ---------- 3 ---------- */
+section #info {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 35fr 65fr;
+    border-top: 1px solid lightgray;
+    padding: 0 5.20vw 2.60vw 5.20vw;
+}
+/* --- 3.1 --- */
+section #info .hospitalAbout {
+    padding: 1.05vw;
+    display: grid;
+    gap: 18px;
+}
+/* 3.1.2 */
+section #info .content .hospitalAbout .about1 {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    justify-content: center;
+}
+section #info .content .hospitalAbout .about1 .about1icon {
+    color: #40acef;
+    cursor: pointer;
+}
+section #info .content .hospitalAbout .about1 .about1txt {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
+section #info .content .hospitalAbout .about1 .about1txt span {
+    color: #40acef;
+    cursor: pointer;
+    font-weight: bold;
+}
+section #info .content .hospitalAbout .about1 .about1txt p {
+    font-size: 14px;
+    color: #000000;
+}
+section #info .content .hospitalAbout .about1 .about1txt a {
+    color: #3780a0;
+}
+/* --- 3.2 --- */
+section #info .overview {
+    padding: 1.05vw;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 13px;
+    border-left: 1px solid lightgray;
+}
+/* 3.2.2 */
+section #info .overview .overviewPara {
+    display: grid;
+    font-size: 11px;
+    border-bottom: 1px solid lightgray;
+    gap: 13px;
+    padding: 0 0 1.56vw 0;
+}
+section #info .overview .overviewPara .overviewPara1 .overviewParaBlue {
+    color: #40acef;
+    cursor: pointer;
+}
+/* 3.2.3 */
+section #info .overview .overviewSFPimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+}
+section #info .overview .overviewSFPimages .overviewSFPimage {
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(83, 81, 81);
+}
+section #info .overview .overviewSFPimages .overviewSFPimage .img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+section #info .overview .overviewSFPimages .overviewSFPimage .txt {
+    padding: 0.521vw;
+    display: grid;
+    gap: 10px;
+}
+section #info .overview .overviewSFPimages .overviewSFPimage .txt .btn {
+    border-top: 1px solid lightgray;
+    padding: 0.521vw 0.21vw;
+}
+section #info .overview .overviewSFPimages .overviewSFPimage .txt .btn i {
+    color: #3780a0;
+}
+section #info .overview .overviewSFPimages .overviewSFPimage .SPFi2 {
+    color: #3780a0;
+    padding: 0.26vw;
+}
+section #info .overview .overviewSFPimages .overviewSFPimage:hover {
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+}
+section #info .overview .overviewSFPimages .overviewSFPimage .txt .btn i:hover{
+    color: #40acef;
+}
+section #info .overview .overviewSFPimages .overviewSFPimage .SPFi2 i:hover {
+    color: #40acef;
+}
+/* 3.2.4 */
+section #info .overview .hospitalNews {
+    display: grid;
+    padding: 1.30vw 0;
+}
+section #info .overview .hospitalNews .hospitalNewsArticles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    padding: 0.36vw 0 0 0;
+}
+section #info .overview .hospitalNews .hospitalNewsArticles .hospitalNewsArticle {
+    padding: 0.521vw;
+}
+section #info .overview .hospitalNews .hospitalNewsArticles .hospitalNewsArticle .newsArticleImg img{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+section #info .overview .hospitalNews .hospitalNewsArticles .hospitalNewsArticle .newsArticleTxt {
+    color: #40acef;
+    font-size: 10px;
+    padding: 0.26vw;
+}
+section #info .overview .hospitalNews .hospitalNewsArticles .hospitalNewsArticle .newsArticleTxt p {
+    cursor: pointer;
+}
+/* 3.2.5 */
+section #info .overview .branches {
+    font-size: 12px;
+}
+section #info .overview .branches p a {
+    color: #3780a0;
+}
+section #info .overview .branches p a:hover {
+    color: #40acef;
+}
+
+/* -------------------------------------------------- */
+
+/* Make an Inquiry Start */ 
+/* Fixed */
+.inquiry {
+    position: fixed;
+    right: 0;
+    top: 60%;
+    background: #40acef;
+    color: #ffffff;
+    padding: 0.36vw;
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.inquiry p {
+    text-orientation: sideways;
+    writing-mode:vertical-rl;
+    word-spacing: 5px;
+}
+
+/* -------------------------------------------------- */
+
+/* Footer Start */
+/* ---------- 1 ---------- */
+/* --- 1.1 --- */
+footer #main {
+    background: #2d3e50;
+    color: #ffffff;
+}
+footer #main #links {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    margin: auto;
+    font-weight: 100;
+    padding: 1.05vw 2.60vw 0.521vw 2.60vw;
+    font-size: 12px;
+}
+footer #main #links .pseudo li:first-child {
+    font-weight: 600;
+    font-size: 14px;
+}
+footer #main #links .pseudo {
+    display: grid;
+    gap: 8px;
+    position: relative;
+    padding: 0.521vw;
+}
+footer #main #links .pseudo a {
+    color: #ffffff;
+}
+footer #main #links .pseudo a:hover {
+    text-decoration: underline;
+}
+/* ------ */
+footer #main #links .medicalProfessionals .formImg {
+    display: grid;
+    padding: 0.521vw 0;
+    gap: 8px;
+}
+/* ------ */
+footer #main #links .medicalProfessionals .formImg form .mail {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+footer #main #links .medicalProfessionals .formImg form .mail input {
+    border: 0;
+    outline: 0;
+    height: 35px;
+    background: transparent;
+    border: 1px solid #3780a0;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0 0.521vw;
+}
+footer #main #links .medicalProfessionals .formImg form .mail button {
+    border: 0;
+    outline: 0;
+    height: 35px;
+    width: 35px;
+    background: transparent;
+    border: 1px solid #3780a0;
+    color: #ffffff;
+}
+/* ------ */
+footer #main #links .medicalProfessionals .formImg .img {
+    height: 170px;
+    width: 300px;
+    background: url(../Images/Footer.jpeg);
+    background-size: 100% 100%;
+    position: relative;
+}
+footer #main #links .medicalProfessionals .formImg .img .img1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    height: 50px;
+    width: 100px;
+}
+footer #main #links .medicalProfessionals .formImg .img .span1 {
+    background: #0d53a3;
+    color: #ffffff;
+    padding: 0.26vw;
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+}
+footer #main #links .medicalProfessionals .formImg .img .span2 {
+    color: #0d53a3;
+    padding: 0.26vw;
+    display: inline;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    font-weight: bold;
+}
+footer #main #links .medicalProfessionals .formImg .img .img2 {
+    position: absolute;
+    top: 75%;
+    left: 23%;
+    transform: translate(-50%, -10%);
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+}
+footer #main #links .medicalProfessionals .formImg .img .img3 {
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    transform: translate(-50%, -10%);
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+}
+footer #main #links .medicalProfessionals .formImg .img .span3 {
+    color: #0d53a3;
+    position: absolute;
+    top: 58%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    font-size: 8px;
+    text-align: center;
+}
+footer #main #links .medicalProfessionals .formImg .img .img4 {
+    position: absolute;
+    top: 68%;
+    left: 90%;
+    transform: translate(-50%, -10%);
+    height: 50px;
+    width: 50px;
+}
+/* --- 1.2 --- */
+footer #main #footerList p {
+    text-align: center;
+    padding: 0.521vw 0 1.05vw 0;
+}
+footer #main #footerList p a {
+    color: #ffffff;
+    font-size: 14px;
+}
+footer #main #footerList p a:hover {
+    color: #40acef;
+}
+/* ---------- 2 ---------- */
+footer #copyrights {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 1.05vw 2.60vw;
+    background: #40acef;
+    color: #ffffff;
+    font-size: 10px;
+}
+footer #copyrights .hLink p a {
+    color: #ffffff;
+    padding: 0 0.26vw;
+}
+footer #copyrights .hLink p a:hover {
+    text-decoration: underline;
+}

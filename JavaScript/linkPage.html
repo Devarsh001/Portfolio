@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- website logo -->
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Web Page Title -->
+    <title>WeShare - File Sharing Made Easy</title>
+  </head>
+  <body>
+    <!-- fixed logo absolute -->
+    <header>
+      <a href="index.html"><img src="Images/logo.png" alt="" /></a>
+    </header>
+    <!-- main div full screen -->
+    <div class="container">
+      <!-- 1 -->
+      <section class="upload_container">
+        <!-- Browse File -->
+        <div class="drop_zone">
+          <!-- file svg image -->
+          <div class="browseImg">
+            <img src="Images/file.svg" alt="file icon" draggable="false" />
+          </div>
+          <!-- select file/drag-drop file -->
+          <input type="file" name="file1" id="fileinput" />
+          <div class="browseTxt">
+            Drop your files here or,
+            <span class="browseBtn">browse</span>
+          </div>
+        </div>
+        <!-- 24 hours valid link text -->
+        <div class="timePeriod">Link expires in 24 hrs</div>
+        <!-- file link and copy button -->
+        <div class="copyLink">
+          <!-- input field where the file link is available -->
+          <input type="text" value="index.html" id="fileLink" />
+          <!-- press button to copy link -->
+          <!-- <button class="copyBtn fa-copy"> -->
+          <button onclick="myFunction()">
+          <i class="fa fa-copy" aria-hidden="true"></i></button>
+          <!-- </button> -->
+        </div>
+        <!-- Redirect to email page -->
+        <div class="sendEmail">
+          or Send via <a href="emailForm.html">Email</a>
+        </div>
+      </section>
+      <!-- 2 -->
+      <!-- file sharing SVG image -->
+      <div class="SVGimage">
+        <img src="Images/undraw_filing_system.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="JavaScript/index.js"></script>
+  </body>
+</html>

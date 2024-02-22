@@ -1,238 +1,254 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: poppins;
 }
-
-
-li{display: inline-block  ;list-style: none;}
-
-a{text-decoration: none;}
-
-h2, h4, h3, h5, .logo, .list li a, .contact a, .contact, .button-two, .emailme form input:last-child, button, a, .skill-name
-
-{color: white;}
-
-h2{font-size: 70px;width: 100%;}
-
-p{font-size: 14px;}
-
-h3{font-size: 25px;margin-bottom: 50px;}
-
-h4{font-size: 30px;letter-spacing: 2px;}
-
-p, .skill-per::before, .skill-per::after{color: #fcfc;}
-
-span, .card i, .contactdetails div i, .list li a:hover,.myname{color: #f9004d;}
-
-button, .button, .emailme a{background-color: #f9004d;}
-
-button,.button-two{text-decoration: none;border: 2px solid transparent;font-weight: bold;padding: 13px 25px;border-radius: 30px;transition: 0.4s;}
-
-.fa,button,
-.button-two,.logo,.beleasing,
-.bemechanic,
-.wpresidence,.beleasing img,
-.bemechanic img,
-.wpresidence img,.card .button,.lStart, .h2{cursor: pointer;}
-
-::placeholder{color: black;}
-
-.button-two:hover, .card .button:hover{background: transparent; border: 2px solid #f9004d;}
-
-.about,
-.skills,
-.myproject,
-.services,
-.contactme
-{
-    padding: 100px;
+:root {
+    --red: #9c3631;
+    --lightred: #a77674;
+    --white: #ffffff;
+    --offwhite: #f9feff;
+    --gray: #151515;
+    --darkgray: #101010;
 }
-
-header, .about,.skills,.myproject,.servies
-{
-    height: 100vh;
+body {
+    background: var(--darkgray);
 }
-
-/* ---------- Header Start ---------- */
-header
-{
+* h1 {
+    font-size: 75px;
+    text-align: center;
+    color: var(--white);
+}
+* h4 {
+    font-size: 27px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/* ============================================ */
+/* Header Start */
+.fa-bars, .fa-close {
+    border: none;
+    outline: none;
+    color: var(--offwhite);
+    background: transparent;
+    cursor: pointer;
+    font-size: 23px;
+    display: none;
+    transition: 500ms;
+}
+.fa-bars:hover {
+    color: var(--red);
+}
+header {
     height: 100vh;
-    width: 100%;
-    background: url(../images/header-background.jpeg);
+    overflow: hidden;
+    padding: 50px 100px;
+    color: white;
+    font-size: 20px;
+    background: url(../Images/headerBG.jpg);
     background-size: cover;
     background-position: center;
 }
-.nav
-{
+header nav {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px 8%;
+    align-items: center;
 }
-.logo
-{
-    letter-spacing: 1px;
+header nav .responsiveNav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+.fa-close {
+    position: absolute;
+    top: 3%;
+    left: -10%;
+    cursor: pointer;
+}
+header .title {
     font-size: 40px;
     font-weight: bold;
 }
-.list li
-{
-    padding: 10px 25px;
+header .title span {
+    color: var(--red);
 }
-.list li a, .contact a
-{
-    font-weight: bold ;
+header .navigate {
+    display: flex;
+    gap: 20px;
 }
-.list li a:hover
-{
-    transition: 0.3s;
+header .navigate a {
+    color: var(--offwhite);
+    padding: 10px;
+    transition: 500ms;
 }
-.contact
-{
-    background: #f9004d;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: 0.3s;
+header .navigate a:hover {
+    color: var(--red);
 }
-.contact:hover
-{
-    transform: scale(1.2);
+header .socialLinks {
+    display: flex;
+    gap: 20px;
 }
-.slider
-{
-    position: absolute;
-    /* top: 50%; */
-    bottom: 40%;
-    left: 8%;
-    transform: translateY(50%);
+header .socialLinks a {
+    color: var(--lightred);
+    font-size: 27px;
+    transition: 500ms;
 }
-.emailme form
-{
-    width: 380px;
-    max-width: 100%;
-    position: relative;
-    margin-bottom: 20px;
+header .socialLinks a:hover {
+    color: var(--white);
 }
-.emailme form input:first-child
-{
-    display: inline-block;
-    width: 100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
-    outline: none;
-    border-radius: 30px;
-}
-.emailme form input:last-child
-{
-    position: absolute;
-    display: inline-block;
-    outline: none;
+header .socialLinks button {
     border: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    background: #f9004d;
-    box-shadow: 0 0 5px black;
-    top: 6px;
-    right: 6px;
+    outline: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    background: var(--red);
+    border: 2px solid var(--red);
+    color: var(--offwhite);
+    cursor: pointer;
+    transition: 500ms;
+    width: 150px;
+    margin: auto;
 }
-
-
-/* ---------- About Start ---------- */
-.about
-{
-    width: 100%;
-    padding: 100px;
-    background-color: #101010;
+header .socialLinks button:hover {
+    color: var(--white);
+    background: transparent;
+}
+.freelancing {
+    padding: 100px 0;
+}
+.freelancing h1 {
+    text-align: left;
+}
+.freelancing span {
+    color: var(--red);
+}
+.freelancing form {
+    padding: 20px 0;
     display: flex;
 }
-.main
-{
-    width: 40%;
-    height: 500px;
-    background-image: url(../images/About2.jpeg);
-    background-size: cover;
+.freelancing form * {
+    height: 40px;
+    padding: 4px 6px;
+    border: 2px solid var(--red);
+    outline: none;
+    transition: 500ms;
+}
+.freelancing form button {
+    background: var(--red);
+    color: var(--offwhite);
+}
+.freelancing form button:hover {
+    background: transparent;
+    color: var(--white);
+}
+.freelancing .button {
+    background: var(--red);
+    border: none;
+    outline: none;
+    color: var(--offwhite);
+    margin-top: 10px;
+    padding: 7px 15px;
+    border-radius: 50px;
+    font-size: 17px;
+    transition: 500ms;
+    border: 2px solid var(--red);
+}
+.freelancing .button:hover {
+    background: transparent;
+    color: var(--white);
+}
+/* ============================================ */
+/* About Me Start */
+.aboutMe {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 100px;
+    color: var(--white);
+    background: var(--gray);
+    gap: 20px;
+}
+.aboutMe .myImage {
+    height: 80vh;
+    width: 50%;
+    background: url(../Images/About2.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    border-radius: 20px;
-    overflow: hidden;
 }
-.about-text
-{
-    width: 60%;
-    padding: 10vh;
+.aboutMe .myText {
+    width: 50%;
 }
-.about-text h2
-{
-    margin-bottom: 20px;
+.aboutMe .myText h1 {
+    text-align: left;
 }
-.about-text h5
-{
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
+.aboutMe .myText p {
+    color: var(--lightred);
+    padding: 0 0 20px 0;
 }
-.about-text p
-{
-    letter-spacing: 1px;
-    line-height: 28px;
-    margin-bottom: 45px;
+.aboutMe .myText span {
+    color: var(--red);
 }
-button:hover
-{
-    background-color: transparent;
-    border: 2px solid #f9004d;
+.aboutMe .myText a {
+    color: var(--offwhite);
+    background: var(--red);
+    padding: 8px 15px;
+    border-radius: 50px;
+    transition: 500ms;
+    border: 2px solid var(--red); 
 }
-
-/* ---------- My Skills Start ---------- */
-.skills
-{
-    background-color: #191919;
+.aboutMe .myText a:hover {
+    background: transparent;
+    color: var(--white);
+}
+/* ============================================ */
+/* MySkills Start */
+.mySkills {
+    background: var(--darkgray);
+    color: var(--white);
+    text-align: center;
+    padding: 50px 100px;
+}
+.mySkills .skills {
     width: 100%;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 50px;
-    gap: 20px;
+    /* gap: 20px; */
 }
-.skill
-{
+.mySkills .skills .skill {
     width: 49%;
-    padding: 10px 50px;
+    padding: 25px;
 }
-.skills h2
-{
-    text-align: center;
-}
-.skill-name
-{
+.mySkills .skills .skill .skill-name {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 20px 0;
+    text-align: start;
 }
-.skill-bar
-{
+.mySkills .skills .skill .skill-bar {
     height: 14px;
-    background: black;
+    background: var(--red);
     border-radius: 10px;
 }
-.skill-per
-{
+.mySkills .skills .skill .skill-bar .skill-per {
     height: 14px;
-    background: #f9004d;
+    background: var(--lightred);
     border-radius: 10px;
     position: relative;
     animation: fillbars 2.5s 1;
 }
-.skill-per::before
-{
+.mySkills .skills .skill .skill-bar .skill-per::before {
     content: attr(per);
     position: absolute;
     padding: 4px 6px;
@@ -241,8 +257,7 @@ button:hover
     top: -35px;
     right: 0;
 }
-.skill-per::after
-{
+.mySkills .skills .skill .skill-bar .skill-per::after {
     content: "";
     position: absolute;
     width: 10px;
@@ -252,229 +267,181 @@ button:hover
     right: 0;
     border-radius: 2px;
 }
-@keyframes fillbars
-{
-    from{width: 0;}
-    to{width: 100%;} 
+@keyframes fillbars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
-
-/* ---------- My Projects Start ---------- */
-.myproject
-{
-    background: #101010;
+/* ============================================ */
+/* My Projects Start */
+.myProjects {
+    background: var(--gray);
+    padding: 50px 100px;
+}
+.myProject {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transform-style: preserve-3d;
+}
+.myProject .box {
+    position: relative;
+    width: 400px;
+    height: 240px;
+    margin: 60px 0;
+    background: var(--black);
+    transform-style: preserve-3d;
+}
+.myProject .box:hover {
+    box-shadow: 0 0 20px gray;
+}
+.myProject .box .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.myProject .box .imgBox img{
+    height: 100%;
+    width: 100%;
+}
+.myProject .box .contentBox {
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    right: 5px;
+    background: var(--offwhite);
+    transform: translateZ(20px) scaleY(0);
+    transform-origin: top;
+    padding: 10px 20px;
+    transition: 500ms;
+    transform-style: preserve-3d;
+}
+.myProject .box .contentBox h4 {
+    text-align: center;
+    color: var(--red);
+}
+.myProject .box .contentBox p {
+    color: var(--lightred);
+}
+.myProject .box:hover .contentBox {
+    transform: translateZ(20px) scaleY(1);
+}
+/* ============================================ */
+/* ContactMe Start */
+.contactMe {
+    background: var(--darkgray);
+    padding: 50px 100px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 100px 0;
+    gap: 20px;
 }
-.myproject h2
-{
-    text-align: center;
-}
-.projects
-{
+.contactCards {
     display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-.projects div
-{
-    width: 31%;
-}
-.beleasing, .bemechanic, .wpresidence
-{
+.contactCards .cBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 350px;
+    height: 250px;
+    border-radius: 25px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
+    background: var(--gray);
+    color: var(--lightred);
+    transition: 500ms;
 }
-.beleasing img, .bemechanic img, .wpresidence img
-{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: 0.5s;
-    filter: brightness(50%);
-    border-radius: 20px;
+.contactCards .cBox:hover {
+    box-shadow: 0 0 12px gray;
 }
-/* .beleasing::after
-{
-    content: "Beleasing Cars, Using Flex, Responsive at 1100px, 900px, 700px";
-}
-.bemechanic::after
-{
-    content: "BeMechanic, Using Grid, Responsive at 1100px, 850px";
-}
-.wpresidence::after
-{
-    content: "WP-Residence, Using Flex, Responsive at 1100px, 850px, 600px";
-} */
-/* .beleasing::after, .bemechanic::after, .wpresidence::after
-{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    transition: 0.5s;
-    background: #f9004d;
-    text-align: center;
-    opacity: 0;
-    border-radius: 20px;
+.contactCards .cBox .fa {
+    font-size: 30px;
+    color: var(--red);
     cursor: pointer;
 }
-.beleasing:hover::after, .bemechanic:hover::after, .wpresidence:hover::after
-{
-    opacity: 0.6;
-} */
-
-/* ---------- Services Start ---------- */
-.servies
-{
-    background-color: #191919;
-    /* width: 100%; */
-    padding: 100px 0;
+.contactCards .cBox h4 {
+    color: var(--owhite);
 }
-.box
-{
-    padding: 0 100px;
+.cForm {
+    width: 75%;
+    margin: auto;
+    background: var(--gray);    
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-.card
-{
-    width: 31%;
-    padding: 20px;
-    background: #101010;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-.card i
-{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin: 25px 0;
-}
-h5
-{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.para p
-{
-    font-size: 15px;
-    line-height: 27px;
-    margin-bottom: 25px;
-}
-.card .button
-{
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 9px 22px;
-    border-radius: 30px;
-    transition: 0.4s;
-}
-
-/* ---------- Contact Me Start ---------- */
-
-.contactme
-{
-    width: 100%;
-    background: #101010;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    padding: 60px 0;
+    border-radius: 25px;
 }
-.contactme h2
-{
-    text-align: center;
+.cForm:hover {
+    box-shadow: 0 0 12px gray;
 }
-.contactdetails
-{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 90%;
-}
-.contactdetails div
-{
-    width: 32%;
-    background-color: #191919;
-    text-align: center;
-    padding: 20px;
-    border-radius: 20px;
-}
-.contactdetails div i
-{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin: 25px 0;
-}
-.inquiryform
-{
-    display: flex;
-    width: 85%;
-    margin: 30px auto;
-    border-radius: 30px;
-    overflow: hidden;
-}
-.inquiryform div
-{
+.cForm form {
     width: 50%;
-}
-.contactmeing
-{
-    height: 600px;
-    background: url(../images/contact\ me.JPG);
-    background-size: cover;
-    background-position: center;
-}
-.form
-{
-    display: flex;
-}
-.form form
-{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    background: #191919;
-    padding: 50px;
-    width: 100%;
+    padding: 20px 0;
+    gap: 15px;
 }
-.form input
-{
-    width: 100%;
-    display: block;
-    height: 30px;
-    padding: 20px 5px;
+.cForm form h4 {
+    text-align: center;
+    color: var(--white);
+}
+.cForm form input, .cForm form button {
+    border: none;
     outline: none;
+    background: transparent;
 }
-
+.cForm form input {
+    width: 100%;
+    padding: 5px 9px;
+    color: var(--lightred);
+    font-size: 14px;
+    border-bottom: 1px solid var(--lightred);
+}
+.cForm form button {
+    border: 2px solid var(--red);
+    background: var(--red);
+    width: 200px;
+    margin: auto;
+    color: var(--offwhite);
+    font-size: 14px;
+    padding: 5px 0;
+    border-radius: 50px;
+    transition: 500ms;
+}
+.cForm form button:hover {
+    color: var(--white);
+    background: transparent;
+}
+/* ============================================ */
 /* Footer Start */
-footer
-{
-    background: #191919;
-    padding: 60px 100px;
+footer {
+    background: var(--gray);
+    padding: 50px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--white);
 }
-.social
-{
+footer span, footer a {
+    color: var(--red);
+}
+.social {
     display: flex;
     gap: 15px;
+}
+.social a:hover, .backToTop a:hover {
+    transition: 500ms;
+    color: var(--lightred);
 }

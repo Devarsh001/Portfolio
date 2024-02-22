@@ -1,33 +1,68 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     color: white;
     font-family: poppins;
+    scroll-behavior: smooth;
 }
-/* body *
-{
-    border: 1px solid black;
-} */
-body{background-color: #121212;}
-li{list-style: none;}
-a{text-decoration: none;transition: 0.5s;}
-h2{font-size: 3.8vw;font-weight: 600;text-shadow: 0 0 5px black;}
-h4{font-size: 2vw;font-weight: 500;}
-h6{font-size: 1.2vw;font-weight: 400;}
-p{font-size: 1vw;}
-img, .fa, .pntr{cursor: pointer;}
-.ylow{color: #f1aa45;}
-.neonblu{color: #4fbaf1;}
-.gry{color: gray;}
-.gray{background: gray;}
-.mrgntop{margin-top: 1.1vw;}
-button{color: white;font-size: 1vw;position: relative;overflow: hidden;padding: 1vw 2.7vw;border-radius: 7px;background: #4fbaf1;border: none; cursor: pointer;}
-
-button::after
-{
+body {
+    background-color: #121212;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+h2 {
+    font-size: 3.8vw;
+    font-weight: 600;
+    text-shadow: 0 0 5px black;
+}
+h4 {
+    font-size: 2vw;
+    font-weight: 500;
+}
+h6 {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+p {
+    font-size: 1vw;
+}
+img, .fa, .pntr {
+    cursor: pointer;
+}
+.ylow {
+    color: #f1aa45;
+}
+.neonblu {
+    color: #4fbaf1;
+}
+.gry {
+    color: gray;
+}
+.gray {
+    background: gray;
+}
+.mrgntop {
+    margin-top: 1.1vw;
+}
+button {
+    color: white;
+    font-size: 1vw;
+    position: relative;
+    overflow: hidden;
+    padding: 1vw 2.7vw;
+    border-radius: 7px;
+    background: #4fbaf1;
+    border: none;
+    cursor: pointer;
+}
+button::after {
     content: "";
     position: absolute;
     top: 0;
@@ -35,59 +70,49 @@ button::after
     opacity: 0;
     height: 200px;
     width: 0;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     transition: 0.5s;
     border-radius: 7px;
 }
 
 /* ------- Common Style Css Start ------- */
-
-.headerleft img, .headerright img, .logo img, .slider img, .threein1 img, .chiptuning img, .rallycars img, .nissanimg img, .audiimg img, .porscheimg img, .manimg img, .motorsports img
-{
+.headerleft img, .headerright img, .logo img, .slider img, .threein1 img, .chiptuning img, .rallycars img, .nissanimg img, .audiimg img, .porscheimg img, .manimg img, .motorsports img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-/* ------- Common Style Css End ------- */
-
 /* ------- Hover Effects Start ------- */
-
-button:hover::after
-{
+button:hover::after {
     opacity: 1;
     width: 100%;
 }
-.downarrow:hover
-{
+.downarrow:hover {
     transform: scale(1.1);
 }
-.nissanimg img:hover, .audiimg img:hover, .porscheimg img:hover
-{
+.nissanimg img:hover, .audiimg img:hover, .porscheimg img:hover {
     filter: brightness(100%);
 }
-.footlist a:hover
-{
+.footlist a:hover {
     color: #f1aa45;
     text-decoration: underline;
 }
-.menu a:hover{color: white;}
-
-/* ------- Hover Effects Ends ------- */
-
-
-
+.menu a:hover {
+    color: white;
+}
+.icons span:hover {
+    color: white;
+    background: black;
+    transition: 500ms;
+}
 
 /* ------- Header Start ------- */
-
-header
-{
+header {
     padding: 45px;
     position: relative;
 }
-.color
-{
+.color {
     height: 40vw;
     width: 100%;
     background-color: #171f62;
@@ -96,61 +121,51 @@ header
     left: 0;
     z-index: -1;
 }
-.nav
-{
+.nav {
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
     grid-template-rows: 7vw;
     align-items: center;
 }
-.list
-{
+.list {
     display: inline;
     padding: 2vw;
 }
-.buynow
-{
+.buynow {
     text-align: right;
 }
-.slider
-{
+.slider {
     border-radius: 2vw;
     position: relative;
     overflow: hidden;
     margin-top: 2vw;
 }
-.learnmore
-{
+.learnmore {
     height: auto;
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translate(0, -50%);
 }
-.carspecification
-{
+.carspecification {
     position: absolute;
     top: 50%;
     right: 10%;
-    transform: translate(0, -50% );
+    transform: translate(0, -50%);
     display: grid;
     gap: 2.80vw;
 }
-.headerleft, .headerright
-{
+.headerleft, .headerright {
     position: absolute;
     top: 48%;
 }
-.headerleft
-{
+.headerleft {
     left: 0;
 }
-.headerright
-{
+.headerright {
     right: 0;
 }
-.downarrow
-{
+.downarrow {
     height: 2.2vw;
     width: 2.2vw;
     border-radius: 50%;
@@ -162,8 +177,7 @@ header
     line-height: 2.5vw;
     transition: 0.5s;
 }
-.scrollformore
-{
+.scrollformore {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -171,173 +185,133 @@ header
     align-items: center;
     width: 90%;
     margin: auto;
-    /* background: red; */
 }
-.icons span
-{
-    height: 2vw;
-    width: 2vw;
+.icons span {
     background: white;
     color: black;
     text-align: center;
-    line-height: 2vw;
-} 
-
-/* ------- Header End ------- */
-
-
+    padding: 5px;
+}
 
 /* ------- About Us Start ------- */
-.aboutus
-{
+.aboutus {
     display: grid;
     gap: 3vw;
     height: auto;
     padding: 10.42vw 10.42vw 1vw 10.42vw;
-    background: url(../img/Aboutus_BG.png);
+    background: url(../Images/Aboutus_BG.png);
     background-size: 100% 100%;
     background-position: center;
 }
-.aboutusimgtxt
-{
+.aboutusimgtxt {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 5vw;
 }
-.loremimg
-{
+.loremimg {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
 }
-.loremtxt
-{
+.loremtxt {
     display: grid;
     gap: 1.5vw;
 }
-.threein1
-{
+.threein1 {
     overflow: hidden;
 }
 
-/* ------- About Us End ------- */
-
-
-
 /* ------- Chip Tuning Rally Cars Start ------- */
-
-.chiprally
-{
+.chiprally {
     display: grid;
     /* gap: 3vw; */
     height: auto;
     padding: 4vw 6vw 0 6vw;
 }
-.chiprallyimgs
-{
+.chiprallyimgs {
     display: grid;
     padding: 3vw 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 2vw;
-    background: url(../img/chiprallybg.png);
+    background: url(../Images/chiprallybg.png);
     background-size: 100% 100%;
     background-position: center;
 }
-.chiptuning
-{
+.chiptuning {
     position: relative;
     margin-top: 2.5vw;
     border-radius: 2vw;
     overflow: hidden;
-    /* text-align: center; */
 }
-.rallycars
-{
+.rallycars {
     position: relative;
     margin-bottom: 2.5vw;
     border-radius: 4vw;
     overflow: hidden;
-    /* text-align: center; */
 }
-.chiprallytxt
-{
+.chiprallytxt {
     display: grid;
     gap: 1vw;
     position: absolute;
     width: 90%;
     top: 45%;
     left: 50%;
-    transform: translate(-50%,-70%);
+    transform: translate(-50%, -70%);
     text-align: center;
 }
-.chiptuning button, .rallycars button
-{
+.chiptuning button, .rallycars button {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
-/* ------- Chip Tuning Rally Cars Ends ------- */
-
-
-
 /* ------- OUR PROJECTS start ------- */
-
-.ourprojects
-{
+.ourprojects {
     display: grid;
     gap: 3vw;
     height: auto;
     padding: 4vw 10.42vw 4vw 10.42vw;
-    background: url(../img/NAP_BG.png);
+    background: url(../Images/NAP_BG.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.projectcars
-{
+.projectcars {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 2vw;
 }
-.nissanimg, .audiimg, .porscheimg
-{
+.nissanimg, .audiimg, .porscheimg {
     display: grid;
     gap: 1vw;
     padding-bottom: 2vw;
-    /* border-radius: 5vw; */
     overflow: hidden;
 }
-.nissanimg img, .audiimg img, .porscheimg img
-{
+.nissanimg img, .audiimg img, .porscheimg img {
     filter: brightness(70%);
     border-radius: 3vw;
     transition: 0.5s;
 }
-.nissantxt, .auditxt, .porschetxt
-{
+.nissantxt, .auditxt, .porschetxt {
     display: grid;
     gap: 1vw;
     padding-left: 2vw;
     border-left: 1px solid gray;
 }
-.ourprojectsman button
-{
+.ourprojectsman button {
     width: 17%;
 }
-.manimg
-{
+.manimg {
     height: 100px;
     width: 100px;
     border-radius: 50%;
     overflow: hidden;
 }
-.ourprojectsman
-{
+.ourprojectsman {
     display: grid;
     width: 80%;
     margin: auto;
@@ -347,58 +321,40 @@ header
     padding: 3vw 0;
 }
 
-/* ------- OUR PROJECTS end ------- */
-
-
-
 /* ------- Mototr-Sport Start ------- */
-
-.motorsports
-{
+.motorsports {
     padding: 0 5vw;
     position: relative;
     overflow: hidden;
 }
-.motorsports img
-{
+.motorsports img {
     border-radius: 2vw;
 }
-.motorsporttxt
-{
+.motorsporttxt {
     position: absolute;
     left: 10%;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     width: 40%;
 }
 
-/* ------- Mototr-Sport End ------- */
-
-
-
 /* ------- Footer Start ------- */
-
-.links-address
-{
+.links-address {
     display: grid;
     grid-template-columns: 46fr 22fr 22fr;
     gap: 3vw;
     padding: 5vw 12vw;
     border-bottom: 1px solid gray;
 }
-.footlist
-{
+.footlist {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 0.5vw;
 }
-.copyright
-{
+.copyright {
     display: grid;
     grid-template-columns: 9fr 1fr;
     align-items: center;
     padding: 2vw 11vw;
 }
-
-/* ------- Footer Ends ------- */

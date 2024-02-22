@@ -1,402 +1,262 @@
-*
-{ 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-    font-family: "DM Sans", Helvetica, Arial, sans-serif; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
-/* body *
-{
-    border: 1px solid black;
-} */
-
-li{ list-style: none;  display: inline-block;  padding: 25px; }
-a{ text-decoration: none; }
-button{ border: none;  padding: 15px; font-size: 16px; margin: 10px 0 0 0; box-shadow: 0 0 7px gray; cursor: pointer;}
-input{ padding: 16px;  width: 200px; }
-p,span,::placeholder{ font-size: 17px; }
-
-.prpltxt{ color: #802e90; }
-.blutxt{ color: #67afb1; margin: 15px 0 15px 0; }
-.bgskyblue{ background: rgb(219, 245, 255); }
-.h1{ font-size: 4.5vw; text-shadow: 0 0 5px gray; }
-.h3{ font-size: 2.1vw; font-weight: 500; }
-.fa{ margin: 0 3px; cursor: pointer;}
-.cartxt p{ font-size: 23px; }
-.h1, .h3,p,input{ margin: 0 0 20px 0; }
-img{cursor: pointer;}
-
-
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 25px;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    box-shadow: 0 0 7px gray;
+    cursor: pointer;
+}
+input {
+    padding: 16px;
+    width: 200px;
+}
+p, span, ::placeholder {
+    font-size: 17px;
+}
+.prpltxt {
+    color: #802e90;
+}
+.blutxt {
+    color: #67afb1;
+    margin: 15px 0 15px 0;
+}
+.bgskyblue {
+    background: rgb(219, 245, 255);
+}
+.h1 {
+    font-size: 4.5vw;
+    text-shadow: 0 0 5px gray;
+}
+.h3 {
+    font-size: 2.1vw;
+    font-weight: 500;
+}
+.fa {
+    margin: 0 3px;
+    cursor: pointer;
+}
+.cartxt p {
+    font-size: 23px;
+}
+.h1, .h3, p, input {
+    margin: 0 0 20px 0;
+}
+img {
+    cursor: pointer;
+}
 
 /* --------------------- Hover Effects Start --------------------- */
-
-li:hover{ background: #802e90; }
-.carleasing button:hover{ background: white; color: black; }
-.car .img img:hover{ transform: scale(1.2); }
-/* .gclass img:hover, .toyota img:hover, .amg img:hover{ filter: brightness(100%); } */
-.gclass:hover .popularcarstxt, .toyota:hover .popularcarstxt, .amg:hover .popularcarstxt{ bottom: 14%; border-bottom: 3px solid #802e90}
-.icons .fa:hover{ color: gray; }
-
-/* --------------------- Hover Effect Ends --------------------- */
-
-
-
+li:hover {
+    background: #802e90;
+}
+.carleasing button:hover {
+    background: white;
+    color: black;
+}
+.car .img img:hover {
+    transform: scale(1.2);
+}
+.gclass:hover .popularcarstxt, .toyota:hover .popularcarstxt, .amg:hover .popularcarstxt {
+    bottom: 14%;
+    border-bottom: 3px solid #802e90
+}
+.icons .fa:hover {
+    color: gray;
+}
 
 /* --------------------- Similar Properties Group Selector Start --------------------- */
-
-.carsinstock, .smartcalculator, .mostpopular, .joinconversation, .startchat, footer
-{ 
-    padding: 130px; 
+.carsinstock, .smartcalculator, .mostpopular, .joinconversation, .startchat, footer {
+    padding: 130px;
 }
-.logo img, .section img, .car .img img, .gclass img, .toyota img, .amg img, .launchimg img, .calculateimg img
-{ 
-    height: 100%; 
-    width: 100%; 
-    object-fit: cover; 
-    object-position: center; 
+.logo img, .section img, .car .img img, .gclass img, .toyota img, .amg img, .launchimg img, .calculateimg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
-.nav, .stock,.popularcars,.suvgt,.since2005,.threediv,.footer,.logotxt,.copyrights,.footerlogo
-{
+.nav, .stock, .popularcars, .suvgt, .since2005, .threediv, .footer, .logotxt, .copyrights, .footerlogo {
     display: flex;
 }
-.nav,.stock,.popularcars,.threediv,.logotxt,.copyrights
-{
+.nav, .stock, .popularcars, .threediv, .logotxt, .copyrights {
     justify-content: space-between;
 }
-.suvgt,.footer,.footerlogo
-{
+.suvgt, .footer, .footerlogo {
     flex-direction: column;
 }
-.stock,.threediv
-{
+.stock, .threediv {
     flex-wrap: wrap;
     margin: auto;
 }
-button,.nav,.nav .logo,.mostpopular
-{
+button, .nav, .nav .logo, .mostpopular {
     background: black;
 }
-button,a,.section,.mostpopular
-{
+button, a, .section, .mostpopular {
     color: white;
 }
-.section,.smartcalculator,.gclass,.toyota,.amg
-{
+.section, .smartcalculator, .gclass, .toyota, .amg {
     position: relative;
 }
-.car,.car .img,.calculateimg,.gclass,.toyota,.amg,.launchimg,.launchtxt
-{
+.car, .car .img, .calculateimg, .gclass, .toyota, .amg, .launchimg, .launchtxt {
     overflow: hidden;
 }
-button,.car .img img,.popularcarstxt
-{
+button, .car .img img, .popularcarstxt {
     transition: 0.5s;
 }
 
-/* --------------------- Similar Properties Group Selector Ends --------------------- */
-
-
-
 /* --------------------- Header Start --------------------- */
-
-.nav
-{ 
-    /* display: flex;  */ 
-    /* justify-content: space-between;  */
-    align-items: center; 
-    /* background: black;  */
+.nav {
+    align-items: center;
 }
-/* .nav .logo
-{ 
-    background: black; 
-} */
-/* .logo img
-{ 
-    height: 100%; 
-    width: 100%; 
-    object-fit: cover; 
-    object-position: center; 
-} */
-.home
-{ 
+.home {
     background-color: #802e90;
 }
-
-/* .section
-{ 
-    position: relative; 
-    color: white; 
-} */
-/* .section img
-{ 
-    height: 100%; 
-    width: 100%; 
-    object-fit: cover; 
-    object-position: center; 
-} */
-.carleasing
-{ 
-    position: absolute; 
-    bottom: 10%; 
-    left: 5%; 
-    padding: 30px 50px; 
-    background: rgba(128, 46, 144, 0.6); 
+.carleasing {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    padding: 30px 50px;
+    background: rgba(128, 46, 144, 0.6);
 }
-.carleasing button
-{ 
-    width: 10vw; 
+.carleasing button {
+    width: 10vw;
 }
-.scrollformore
-{ 
-    position: absolute; 
-    top: 85%; 
-    right: 5%; 
+.scrollformore {
+    position: absolute;
+    top: 85%;
+    right: 5%;
 }
-.scrollformore .h3
-{ 
-    font-size: 1.5vw; 
+.scrollformore .h3 {
+    font-size: 1.5vw;
 }
-.scrollformore span
-{ 
-    color: yellow; 
+.scrollformore span {
+    color: yellow;
 }
-
-/* --------------------- Header End --------------------- */
-
-
 
 /* --------------------- Cars in stock Start --------------------- */
-
-.carsinstock
-{ 
-    /* padding: 130px;  */
-    padding-bottom: 200px; 
-    background: #f8f4f4; 
+.carsinstock {
+    padding-bottom: 200px;
+    background: #f8f4f4;
 }
-/* .stock
-{ 
-    display: flex;  
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    margin: auto; 
-} */
-.car
-{ 
-    height: 30vw; 
-    width: 31%; 
-    background: white; 
-    margin-bottom: 20px; 
-    /* overflow: hidden;  */
-    box-shadow: 0 0 5px black; 
+.car {
+    height: 30vw;
+    width: 31%;
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px black;
 }
-.img, .cartxt
-{ 
-    height: 15vw; 
+.img, .cartxt {
+    height: 15vw;
 }
-/* .car .img
-{ 
-    overflow: hidden; 
-} */
-/* .car .img img
-{ 
-    transition: 0.5s; 
-} */
-.car .cartxt
-{ 
-    padding: 20px 30px; 
+.car .cartxt {
+    padding: 20px 30px;
 }
-.stock button
-{ 
-    width: 31%; 
-    margin: 50px auto; 
+.stock button {
+    width: 31%;
+    margin: 50px auto;
 }
-
-/* --------------------- Cars in stock End --------------------- */
-
-
 
 /* --------------------- Smart Calculator Start --------------------- */
-
-.smartcalculator
-{     
-    /* position: relative;  */
-    /* padding: 130px;  */
-    padding-bottom: 200px; 
+.smartcalculator {
+    padding-bottom: 200px;
 }
-.calculateimg
-{ 
-    position: absolute; 
-    top: -10%; 
-    left: 10%; 
-    height: 50vw; 
+.calculateimg {
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    height: 50vw;
     width: 35vw;
-    /* overflow: hidden;  */
 }
-.calculateimg img
-{ 
-    object-fit: contain; 
+.calculateimg img {
+    object-fit: contain;
 }
-.calculatortxt
-{ 
-    width: 40%; 
-    margin: 5% 0 0 45%; 
+.calculatortxt {
+    width: 40%;
+    margin: 5% 0 0 45%;
 }
-.calculatortxt button
-{ 
-    padding: 15px 30px; 
+.calculatortxt button {
+    padding: 15px 30px;
 }
-
-/* --------------------- Smart Calculator Ends --------------------- */
-
-
 
 /* --------------------- Most Popular Starts --------------------- */
-
-/* .mostpopular
-{ 
-    padding: 130px; 
-    color: white; 
-    background: black; 
-} */
-.popularcars
-{ 
-    /* display: flex;  */ 
-    /* justify-content: space-between;  */
-    padding-top: 50px; 
+.popularcars {
+    padding-top: 50px;
 }
-.gclass
-{ 
-    width: 64%; 
+.gclass {
+    width: 64%;
 }
-.suvgt
-{ 
-    width: 35%; 
-    /* display: flex;  */ 
-    /* flex-direction: column;  */
-    gap: 10px; 
+.suvgt {
+    width: 35%;
+    gap: 10px;
 }
-/* .gclass, .toyota, .amg
-{ 
-    position: relative; 
-    overflow: hidden; 
-} */
-.gclass img, .toyota img, .amg img
-{ 
-    filter: brightness(75%); 
+.gclass img, .toyota img, .amg img {
+    filter: brightness(75%);
 }
-.popularcarstxt
-{ 
-    position: absolute; 
-    bottom: 5%; 
-    left: 5%; 
-    /* transition: 0.5s;  */
-    text-shadow: 0 0 10px black; 
-    /* border-bottom: 2px solid #802e90;  */
-
+.popularcarstxt {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    text-shadow: 0 0 10px black;
 }
-
-/* --------------------- Most Popular Ends --------------------- */
-
-
 
 /* --------------------- Join Conversation Start --------------------- */
-
-.joinconversation
-{ 
-    /* padding: 130px;  */
-    border-bottom: 1px solid rgba(128,128,128,0.3); 
+.joinconversation {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
-.since2005
-{ 
-    /* display: flex;  */ 
-    width: 90%; 
-    align-items: end; 
+.since2005 {
+    width: 90%;
+    align-items: end;
 }
-.launchimg, .launchtxt
-{ 
-    width: 50%; 
-    /* overflow: hidden;  */
+.launchimg, .launchtxt {
+    width: 50%;
 }
-.launchimg
-{ 
-    height: 23vw; 
+.launchimg {
+    height: 23vw;
 }
-/* .launchimg img
-{ 
-    height: 100%; 
-    width: 100%; 
-    object-fit: cover; 
-    object-position: center; 
-} */
-.launchtxt button
-{ 
-    height: 40px; 
-    width: 120px; 
+.launchtxt button {
+    height: 40px;
+    width: 120px;
 }
-
-/* --------------------- Join Conversation Ends --------------------- */
-
-
 
 /* --------------------- Start Chat Start --------------------- */
-
-.startchat
-{ 
-    /* padding: 130px;  */
-    border-bottom: 1px solid rgba(128,128,128,0.3); 
+.startchat {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
-/* .threediv
-{ 
-    width: 90%; 
-    margin: auto; 
-    display: flex;  
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-} */
-.clickhere
-{ 
-    width: 31%; 
-    padding: 20px; 
+.clickhere {
+    width: 31%;
+    padding: 20px;
 }
-.threediv button
-{ 
-    width: 35%; 
-    margin: 60px auto; 
+.threediv button {
+    width: 35%;
+    margin: 60px auto;
 }
-
-/* --------------------- Start Chat Ends --------------------- */
-
-
 
 /* --------------------- Footer Start --------------------- */
-
-footer
-{ 
-    /* padding: 130px;  */
-    /* display: flex;  */ 
-    /* flex-direction: column;  */
-    gap: 30px; 
-    background: #f8f4f4; 
+footer {
+    gap: 30px;
+    background: #f8f4f4;
 }
-.copyrights
-{ 
-    margin-top: 50px; 
+.copyrights {
+    margin-top: 50px;
 }
-.logotxt
-{ 
-    border-bottom: 1px solid rgba(128,128,128,0.3); 
-    padding-bottom: 50px; 
+.logotxt {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    padding-bottom: 50px;
 }
-/* .logotxt, .copyrights
-{ 
-    display: flex;  
-    justify-content: space-between; 
-} */
-.footerlogo
-{ 
-    /* display: flex;  */ 
-    /* flex-direction: column;  */
-    gap: 15px; 
+.footerlogo {
+    gap: 15px;
 }
-
-/* --------------------- Footer Ends --------------------- */

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToolM5 using Bootstrap</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+    /* .container-fluid *
+      {
+          border: 1px solid;
+      } */
+      li 
+      {
+        list-style: none;
+      }
+      a 
+      {
+        text-decoration: none;
+        color: black;
+      }
+      .card 
+      {
+        overflow: hidden;
+      }
+      .slider,.hWorks,.pTool,.tPrint,.tSlogan,.card,.rel img,form,.br,.oTeam
+      {
+        border-radius: 30px;
+      }
+      .bGreen 
+      {
+        background: #a8d741;
+      }
+      .card:hover 
+      {
+        transform: scale(1.1) rotate(-1deg);
+        transition: 0.5s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      }
+      * button:hover 
+      {
+        transform: scale(1.1) rotate(1deg);
+        background: white;
+        color: black;
+        border: 2px solid black;
+        transition: 0.5s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      }
+      .tPrint:hover,.tSlogan:hover 
+      {
+        transform: rotate(-1.5deg);
+        transition: 0.5s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      }
+      .rel 
+      {
+        position: relative;
+        z-index: 0;
+      }
+      .abs 
+      {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+      }
+      .fa, img, .cName 
+      {
+        cursor: pointer;
+      }
+      #fa 
+      {
+        font-size: 100px;
+        color: #a8d741;
+      }
+      #fa:hover,#contact:hover 
+      {
+        filter: brightness(90%);
+      }
+      #contact 
+      {
+        font-size: 80px;
+      }
+      .startRound
+      {
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      .fa
+      {
+        font-size: 20px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container-fluid bg-light">
+      <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
+      <!-- Header Start -->
+      <div class="header row align-items-center my-4 mx-5">
+        
+        <!-- Logo -->
+        <div class="cName col-lg-4 col-6 h2 text-start">ToolM5</div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-xl col-lg-8 col-6 justify-content-end">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon fa fa-bars"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            
+            <ul class="navbar-nav align-items-center gap-2">
+              <li class="nav-item"><a class="nav-link fs-5 text-dark" href="#">About Us</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-dark" href="#">Services</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-dark" href="#">Contacts</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-dark fa fa-facebook" href="#"></a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-dark fa fa-twitter" href="#"></a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-dark fa fa-instagram" href="#"></a></li>
+              <button class="bGreen rounded-pill px-3 py-2 border border-3 border-dark">Get Started <span class="fa fa-chevron-circle-right"></span></button>
+            </ul>
+
+          </div>
+
+        </nav>
+
+      </div>
+
+
+      <!-- Slider Start -->
+      <div class="slider bGreen row text-center align-items-center py-5 mx-5" style="height: 550px;">
+        
+        <h4 class="col-sm-12">Create Your</h4>
+        <h1 class="col-sm-12 display-1 fw-normal">T-Shirt Design</h1>
+        <button class="rounded-pill py-2 border border-3 border-white bg-dark text-white col-sm-2 m-auto">Get Started</button>
+        <h5 class="text-decoration-underline">view how it works</h5>
+        <p class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      
+      </div>
+
+
+      <!-- Our Features Start -->
+      <div class="oFeatures mt-5 border-top py-2 mx-5">
+        
+        <p class="ps-4 fw-bolder fs-3">Our Features</p>
+
+        <!-- Four Features Start -->
+        <div class="oFlist row py-2 pb-5 justify-content-evenly">
+          
+          <!-- Feature 1 -->
+          <div class="uDesign col-xl-3 col-lg-5 col-xs-10 col-11 row py-3 align-items-center">
+            
+            <div class="udImg col-sm-5">
+              <img src="../Bootstrap/Images/OF1.jpeg" alt="" class="w-100" />
+            </div>
+            
+            <div class="udText col-sm-7 p-3">
+              <p class="fw-bolder">Unique Design</p>
+              <p class="text-secondary">Jul 13 2025</p>
+            </div>
+          
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="qMaterials col-xl-3 col-lg-5 col-xs-10 col-11 row py-3 align-items-center">
+            
+            <div class="qmImg col-sm-5">
+              <img src="../Bootstrap/Images/OF2.jpeg" alt="" class="w-100" />
+            </div>
+            
+            <div class="qmText col-sm-7 p-3">
+              <p class="fw-bolder">Unique Design</p>
+              <p class="text-secondary">Jul 15 2025</p>
+            </div>
+          
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="hpQuality col-xl-3 col-lg-5 col-xs-10 col-11 row py-3 align-items-center">
+
+            <div class="hpqImg col-sm-5">
+              <img src="../Bootstrap/Images/OF3.jpeg" alt="" class="w-100" />
+            </div>
+
+            <div class="hpqText col-sm-7 p-3">
+              <p class="fw-bolder">Unique Design</p>
+              <p class="text-secondary">Jul 23 2025</p>
+            </div>
+
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="gReviews col-xl-3 col-lg-5 col-xs-10 col-11 row py-3 align-items-center">
+          
+            <div class="grImg col-sm-5">
+              <img src="../Bootstrap/Images/OF4.jpeg" alt="" class="w-100" />
+            </div>
+          
+            <div class="grText col-sm-7 p-3">
+              <p class="fw-bolder">Unique Design</p>
+              <p class="text-secondary">Jul 27 2025</p>
+            </div>
+          
+          </div>
+
+        </div>
+
+        <!-- How It Works Start-->
+        <div class="hWorks p-4 bg-dark">
+          
+          <h3 class="text-white fw-normal fs-1 ps-5">How it works?</h3>
+
+          <div class="cards row gap-2 justify-content-evenly p-5 gap-5">
+          
+            <!-- Image -->
+            <div class="card col-lg-5 col-10 p-4">
+              <img class="w-100 br" src="../Bootstrap/Images/HIW.jpeg" alt="Card image"/>
+              
+              <div class="card-body">
+                <h4 class="card-title lh-lg fs-1">Unique T-Shirt</h4>
+                <div class="btn d-flex justify-content-between">
+                  <button class="rounded-pill px-2 py-2 border border-2 border-dark bg-white">Buy for $59</button>
+                  <button class="bGreen rounded-pill px-4 py-2 border border-2 border-dark">Vier all <span class="fa fa-chevron-circle-right"></span></button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Text -->
+            <div class="card col-lg-5 col-10 p-3">
+
+              <p class="border-bottom fs-4">Unique T-Shirt Design</p>
+              <p class="fs-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id orci nec lectus lacinia tempus. Praesent nec quam mollis turpis eleifend consequat.</p>
+              <p class="fs-3">Phasellus euismod maximus ipsum vehicula vehicula. Mauris posuere risus nec purus dapibus semper sed id ligula. Integermassa lorem, fringilla vel eros.</p>
+              
+              <div class="btn text-start d-flex justify-content-between">
+                <button class="rounded-pill px-2 py-2 border border-2 border-dark bg-white">Subscribe $79/q</button>
+                <button class="bGreen rounded-pill px-3 py-2 border border-2 border-dark">More info <span class="fa fa-chevron-circle-right"></span></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- About Us Start -->
+        <div class="aUs row m-5 p-5">
+          <p class="col-xl-6 col-md-12 p-5 h1 text-center">About Us</p>
+          <p class="col-xl-6 col-md-12 p-5 border-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris felis elit, faucibus at tincidunt vel, ultrices vitae mauris. Pellentesque nec ante nisi. Praesent posuere dignissim nibh in finibus. Nunc rutrum nibh pellentesque, viverra dolor quis, sollicitudin libero. Duis non elit feugiat maximus.</p>
+        </div>
+      </div>
+
+
+      <!-- Professional tools Start -->
+      <div class="pTools mx-5">
+
+        <h1 class="fw-normal fs-1 pb-3">Professional Tools</h1>
+
+        <!-- Material, Print, & Reviews Three Cards Start -->
+        <div class="cards pTool bGreen d-flex flex-wrap justify-content-evenly px-4 py-5 gap-3">
+          
+          <!-- Quality Material -->
+          <div class="card col-xl-3 col-lg-5 col-sm-10 col-10 pb-4" style="width: 400px">
+            <img class="w-100 h-75 pb-3" src="../Bootstrap/Images/QM.jpeg" alt="Card image"/>
+            <div class="qmTxt px-3">
+              <p class="fw-bold">Quality Materials</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <p class="border-top pt-3"><a href="">Read More ></a></p>
+            </div>
+          </div>
+
+          <!-- High Print Quality -->
+          <div class="card col-xl-3 col-lg-5 col-sm-10 col-10 pb-4" style="width: 400px">
+            <img class="w-100 h-75 pb-3" src="../Bootstrap/Images/HQP.jpg" alt="Card image"/>
+            <div class="hpTxt px-3">
+              <p class="fw-bold">High Print Quality</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <p class="border-top pt-3"><a href="">Read More ></a></p>
+            </div>
+          </div>
+
+          <!-- Good Reviews -->
+          <div class="card col-xl-3 col-lg-5 col-sm-10 col-10 pb-4" style="width: 400px">
+            <img class="w-100 h-75 pb-3" src="../Bootstrap/Images/HIW.jpeg" alt="Card image"/>
+            <div class="grTxt px-3">
+              <p class="fw-bold">Good Reviews</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <p class="border-top pt-3"><a href="">Read More ></a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Shop -->
+        <div class="oShop w-75 p-5 m-auto text-center my-5">
+          <h1 class="fs- fw-normal py-3">Our Shop</h1>
+          <p class="fs-3 text-secondary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            fringilla suscipit orci eu pellentesque. Nullam consectetur dolor
+            vel ex ullamcorper, non viverra neque aliquet.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Printed/Slogan T-Shirts Start -->
+      <div class="tShirts d-flex flex-wrap gap-5 py-5 mx-5">
+        
+        <!-- Printed T-Shirt Start -->
+        <div class="tPrint d-flex flex-wrap align-items-center justify-content-center text-center bg-white">
+          
+          <div class="printImg col-xl-4 col-md-10">
+            <img src="../Bootstrap/Images/HQP.jpg" alt="" class="w-100 h-50 startRound" />
+          </div>
+
+          <div class="printText col-xl-6 p-5 col-md-10">
+            <h1 class="fs-1 fw-normal pt-5">T-shirt with Print</h1>
+            <p class="fs-5 text-secondary pb-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies metus et nibh gravida, eu imperdiet ante egestas. Duis ornare lobortis ante, eget eleifend sapien dictum ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+          </div>
+
+          <div class="priceBTN col-xl-2 col-md-10 p-3">
+            <h1 class="fs-1">$29</h1>
+            <button class="bGreen rounded-pill px-3 py-2 border border-3 border-dark">
+              Buy now <span class="fa fa-chevron-circle-right"></span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Slogan T-Shirt Start -->
+        <div class="tSlogan d-flex flex-wrap align-items-center justify-content-center text-center bg-white">
+          
+          <div class="sloganImg col-xl-4 col-md-10">
+            <img src="../Bootstrap/Images/HIW.jpeg" alt="" class="w-100 h-50 startRound" />
+          </div>
+
+          <div class="sloganText col-xl-6 col-md-10 p-5">
+            <h1 class="fs-1 fw-normal pt-5">T-shirt with Slogan</h1>
+            <p class="fs-5 text-secondary pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies metus et nibh gravida, eu imperdiet ante egestas. Duisornare lobortis ante, eget eleifend sapien dictum ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces.</p>
+          </div>
+
+          <div class="priceBTN col-xl-2 col-md-10 p-3">
+            <h1 class="fs-1">$49</h1>
+            <button class="bGreen rounded-pill px-3 py-2 border border-3 border-dark">Buy now <span class="fa fa-chevron-circle-right"></span></button>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Our Team Start -->
+      <div class="oTeam py-5 mx-5">
+        
+        <h1 class="fs-1 fw-normal">Our Team</h1>
+        <p class="text-secondary fs-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="oTeam bGreen d-flex flex-wrap justify-content-evenly p-4 gap-3">
+          
+          <!-- Jessica -->
+          <div class="card col-xl-3 col-lg-5 col-sm-10 col-10" style="width: 400px">
+            <img class="image-fluid h-50 pb-3" src="../Bootstrap/Images/Jessica.jpg" alt="Card image"/>
+            <div class="jessicaTxt px-3">
+              <p class="fw-bold">Jessica wift</p>
+              <p class="text-secondary">Manager</p>
+              <p>Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>
+              <button class="bGreen rounded-pill px-3 py-2 border border-3 border-dark">View Profile <span class="fa fa-chevron-circle-right"></span></button>
+            </div>
+          </div>
+
+          <!-- Ben -->
+          <div class="card col-xl-3 col-lg-5 col-sm-10 col-10" style="width: 400px">
+            <img class="image-fluid h-50 pb-3" src="../Bootstrap/Images/Ben.jpg" alt="Card image"/>
+            <div class="benTxt px-3">
+              <p class="fw-bold">Ben Palmer</p>
+              <p class="text-secondary">Designer</p>
+              <p>Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>
+              <button class="bGreen rounded-pill px-3 py-2 border border-3 border-dark">View Profile <span class="fa fa-chevron-circle-right"></span></button>
+            </div>
+          </div>
+
+          <!-- Adam -->
+          <div class="card col-xl-3 col-lg-5 col-sm-10 col-10" style="width: 400px">
+            <img class="image-fluid h-50 pb-3" src="../Bootstrap/Images/Adam.jpg" alt="Card image"/>
+            <div class="adamTxt px-3">
+              <p class="fw-bold">AdamBrown</p>
+              <p class="text-secondary">Developer</p>
+              <p>Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>
+              <button class="bGreen rounded-pill px-3 py-2 border border-3 border-dark">View Profile <span class="fa fa-chevron-circle-right"></span></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- View in Action Start -->
+      <div class="vinAction bGreen p-5 text-center my-5">
+        <h1 class="text-white display-1 fw-normal pb-3">View in Action</h1>
+        <div class="pseudo rel">
+          <img src="../Bootstrap/Images/QM.jpeg" alt="" class="w-75" />
+          <a href="https://www.youtube.com/watch?v=3bEfM1u5CRo" target="_blank" id="fa" class="fa fa-youtube-play abs"></a>
+        </div>
+      </div>
+
+
+      <!-- Our Partners Start -->
+      <div class="parteners d-flex flex-wrap text-center p-5 g-3 justify-content-evenly">
+
+        <div class="partener bg-white card col-xl-3 col-md-5 p-4 ">
+            <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/1.png" alt="" class="w-50 m-auto pb-5">
+            <h3>Our partner</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla suscipit.</p>
+            <button class="bGreen rounded-pill px-3 py-2 border border-3 border-dark">Learn More</button>
+        </div>
+
+        <div class="partener bg-white card col-xl-3 col-md-5 p-4 ">
+            <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/2.png" alt="" class="w-50 m-auto pb-5">
+            <h3>Our partner</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla suscipit.</p>
+            <button class="bGreen rounded-pill px-3 py-2 border border-3 border-dark">Learn More</button>
+        </div>
+
+        <div class="partener bg-white card col-xl-3 col-md-5 p-4 ">
+            <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/3.png" alt="" class="w-50 m-auto pb-5">
+            <h3>Our partner</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla suscipit.</p>
+            <button class="bGreen rounded-pill px-3 py-2 border border-3 border-dark">Learn More</button>
+        </div>
+
+      </div>
+
+
+      <!-- Steve Jason Start -->
+      <div class="sJason mx-5">
+
+        <div class="tPrint row align-items-center justify-content-center p-4 bg-white">
+        
+          <div class="printText col-xl-7 p-5 col-lg-6 col-sm-10">
+            <p class="fs-5 text-secondary">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu accumsan diam, elementum maximus arcu. Lobortise est ut blandit facilisis, est quam dictum dolor, sed mollis augue. In elementum maximus tempus. Suspendisse augue eget massa vestibulum hendrerit purus."</p>
+            <h6 class="fw-bold">Steve Jason</h6>
+            <p class="text-secondary">Client</p>
+            <button class="bGreen rounded-pill px-3 py-2 border border-3 border-dark">Read Full Review <span class="fa fa-chevron-circle-right"></span></button>
+          </div>
+
+          <div class="printImg col-xl-5 col-lg-6 col-sm-10">
+            <img src="../Bootstrap/Images/Adam.jpg" alt="" class="w-100 br" />
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Contacts Start -->
+      <div class="contacts m-5 text-center p-3 lh-lg">
+
+        <h1 class="fs-1 fw-normal">Contacts</h1>
+        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="cDetails row align-items-center justify-content-evenly gap-4 py-5">
+          
+          <div class="eMail col-xl-5 col-sm-9 col-11 bg-white card p-4">
+            <p class="fa fa-envelope-o pb-4" id="contact"></p>
+            <h2 class="fs-1 fw-normal">Email</h2>
+            <h4 class="fs-5 fw-normal text-secondary">
+              We will reply as soon as possible
+            </h4>
+            <h4 class="fs-5 fw-normal">Send us an email</h4>
+          </div>
+
+          <div class="phone col-xl-5 col-sm-9 col-11 bg-white card p-4">
+            <p class="fa fa-mobile-phone pb-4" id="contact"></p>
+            <h2 class="fs-1 fw-normal">Phone</h2>
+            <h4 class="fs-5 fw-normal text-secondary">
+              Mon - Fri 09:00 - 18:00
+            </h4>
+            <h4 class="fs-5 fw-normal">Call (800) 123 45 67</h4>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Send Message Start -->
+      <div class="sMessage mx-5 justify-content-center text-center pb-5">
+        
+        <h1 class="fs-1 fw-normal pb-3">Send Message</h1>
+
+        <form action="/action_page.php" class="was-validated w-75 m-auto row bGreen p-4 justify-content-center">
+          
+          <div class="mb-3 mt-3 col-xl-6 col-10">
+            <input type="text" class="form-control" id="name" placeholder="Name" name="name" required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+
+          <div class="mb-3 mt-3 col-xl-6 col-10">
+            <input type="email" class="form-control" id="name" placeholder="Email" name="name" required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+
+          <div class="mb-3 col-xl-12 col-10">
+            <input type="text" class="form-control col-xl-10" id="pwd" placeholder="Your Site" name="pswd" required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+
+          <div class="mb-3 col-xl-12 col-10">
+            <textarea name="msg" class="form-control col-xl-10" id="msg" cols="100" rows="10" placeholder="Message" required></textarea>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+
+          <button class="bGreen rounded-pill px-3 py-2 btn btn-primary col-xl-3 col-sm-4 col-4 border border-3 border-dark text-dark m-auto">Submit</button>
+          
+        </form>
+
+      </div>
+
+
+      <!-- Google Map Start -->
+      <div class="gMap mt-5 w-100">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1892470.4808645877!2d70.66019600066163!3d22.117151032685538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13 1!3m3!1m2!1s0x395e84faa5a36071%3A0x9af325a448f09478!2sTops%20Technologies!5e0!3m2!1sen!2sus!4v1701367635042!5m2!1sen!2sus" width="100%" height="550" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade "></iframe>
+      </div>
+
+ 
+      <!-- Footer Start -->
+      <footer class="bg-dark text-light p-5 text-center">
+        <p class="fs-4">
+          <span class="fa fa-copyright"></span> Copyright 2023 Mobirise - All
+          Rights Reserved
+        </p>
+      </footer>
+
+      <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    </div>
+
+  </body>
+</html>

@@ -1,277 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- Font Family -->
     <link rel="stylesheet" id="mfn-fonts-css" href="https://fonts.googleapis.com/css?family=Poppins%3A1%2C300%2C400%2C400italic%2C500%2C700%2C700italic&amp;display=swap&amp;ver=5.8" type="text/css" media="all">
-    
+    <!-- Font Awesone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <title>Portfolio Website</title>
-    
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="stylesheet" href="css/media.css">
-
+    <!-- Animate-Text -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Scroll-animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Title -->
+    <title>Devarsh | Portfolio</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- My Media -->
+    <link rel="stylesheet" href="CSS/media.css">
+    <!-- fav-icon -->
+    <link rel="fav-icon" href="Images/BackGround3.png">
 </head>
-
 <body>
-
-    <!-- Head Section Start -->
-    <header>
-
-        <div class="nav">
-            
-            <div class="logo">Portfo<span>lio</span></div>
-            
-            <div class="list">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Service</a></li>
-                </ul>
+    <div class="container-fluid">
+        <!-- Header Start -->
+        <header id="home">
+            <!-- Navigate Through Portfolio -->
+            <nav>
+                <div class="title">
+                    Portfo<span>lio</span>
+                </div>
+                <!-- Navigation Bars -->
+                <button class="fa fa-bars" id="barsBtn"></button>
+                <!-- Responsive NavBar -->
+                <div class="responsiveNav">
+                    <!-- Navigate Through Portfolio -->
+                    <button class="fa fa-close" id="closeNav"></button>
+                    <div class="navigate">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#myProjects">Work</a></li>
+                        <li><a href="#mySkills">Skills</a></li>
+                        <li><a href="#aboutMe">About</a></li>
+                        <li><a href="#contactMe">Contact</a></li>
+                    </div>
+                    <!-- Git / LinkedIn / Theme-Changer -->
+                    <div class="socialLinks">
+                        <a href="https://github.com/Devarsh001" class="fa fa-github" target="_blank"></a>
+                        <a href="http://linkedin.com/in/devarsh-soni-871141242" class="fa fa-linkedin" target="_blank"></a>
+                        <button id="changeTheme">Change Theme</button>
+                    </div>
+                </div>
+            </nav>
+            <!-- FreeLancing section -->
+            <div class="freelancing">
+                <h4>Hello, my name is</h4>
+                <h1>Devarsh <span>Soni</span></h1>
+                <h4>I am a <span class="auto-type"></span></h4>
+                <div class="emailMe">
+                    <form>
+                        <input type="email" name="uEmail" id="userEmail" placeholder="Enter Your Email" required />
+                        <button>Lets Start</button>
+                    </form>
+                </div>
+                <h4>I am available for freelancing</h4>
+                <button class="button">Hire Me</button>
             </div>
-            
-            <div class="contact">
-                <a href="#contactme" class="btn">Contact</a>
-            </div>
-        </div>
+        </header>
 
-        <div class="slider">
-            <h4>Hello, my name is</h4>
-            <h2 class="h2">Devarsh <span>Soni</span></h2>
-            <h4>I'am a Web Developer</h4><br><br>
+        <!-- Projects Start -->
+        <div class="myProjects" id="myProjects" data-aos="fade-in">
+            <h1>My Projects</h1>
 
-            <div class="emailme">
-                <form>
-                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                    <input type="submit" name="submit" id="" class="lStart" value="Lets Start">
-                </form>
-
-                <h5>I am available for freealancing</h5><br>
-                <a href="#" class="button-two">Hire Me</a>
-            </div>
-
-        </div>
-
-    </header>
-    <!-- Head Section End -->
-
-    <!-- About Section Start -->
-    <div class="about" id="about">
-       
-        <div class="main">
-            <!-- <img src="images/About2.jpeg" alt=""> -->
-        </div>
-
-        <div class="about-text">
-                <h2>About Me</h2>
-                <h5>Developer <span>& Designer</span></h5>
-                <p>I am a front-end and web developer. I have good knowledge of HTML, CSS, HTML5, and CSS3. I have developed some websites that are responsive. Together we can make creative, modern and user-friendly websites that will grow your business.</p>
-                <button type="button">Let's Talk</button>
-                <a href="MyResume/DEVARSH RESUME.pdf" target="_blank"><button type="button">Check out my Resume</button></a>
-        </div>
-    </div>
-    <!-- About Section End -->
-
-    <!-- Skills Start -->
-    <div class="skills" id="skills">
-        <h2>My Skills</h2>
-
-        <div class="skill">
-            <div class="skill-name">HTML5</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="85%" style="max-width:85%"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="skill-name">Researh & Developement</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="65%" style="max-width:65%"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="skill-name">PROBLEM SOLVING</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="70%" style="max-width:70%"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="skill-name">CSS</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="80%" style="max-width:80%"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="skill-name">Creativity</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="65%" style="max-width:65%"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="skill-name">Time Management</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="70%" style="max-width:70%"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Skills Ends -->
-
-    <!-- Projects Start -->
-    <div class="myproject" id="projects">
-        
-        <h2>My Projects</h2>
-        
-        <div class="projects">
-            
-            <div class="beleasing">
-                <a href="flex-beleasing/home.html" target="_blank">
-                    <img src="images/BeLeasing_flex.jpeg" alt="beleasing website flex">
-                </a>
-                <h4>BeLeasing using flex</h4>
-            </div>
-            
-            <div class="bemechanic">
-                <a href="grid-bemechanic/home.html" target="_blank">
-                    <img src="images/BeMechanic_grid.jpeg" alt="be-mechanic website grid">
-                </a>
-                <h4>BeMechanic using grid</h4>
-            </div>
-            
-            <div class="wpresidence">
-                <a href="flex-wp-residence/home.html" target="_blank">
-                    <img src="images/WP-Residence_flex.jpeg" alt="wp-residence using flex">
-                </a>
-                <h4>WP-Residence using flex</h4>
-            </div>
-        
-        </div>
-    </div>
-    <!-- Projects Ends -->
-
-    <!-- Services Start -->
-    <div class="servies" id="services">
-
-        <h2 style="text-align: center;">Services</h2>
-
-        <div class="box">
-            
-            <div class="card">
-                <i class="fa fa-bars "></i>
-                <h5>Web Development</h5>
-                <div class="para">
-                    <p>
-                        Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.
-                    </p>
-                    <p>
-                        <a class="button" href="#">Read More</a>
-                    </p>
+            <div class="myProject" id="myProjects" data-aos="slide-up">
+                <!-- Flex -->
+                <div class="box" data-aos="fade-in">
+                    <div class="imgBox">
+                        <a href="flex-beleasing/home.html" target="_blank">
+                            <img src="Images/BeLeasing_flex.jpeg" alt="FlexWebsite-Image">
+                        </a>
+                    </div>
+                    <div class="contentBox">
+                        <h4>Flex Website</h4>
+                        <p>The website was created with HTML and CSS, utilizing flexbox for a cohesive layout design. Flexbox allows for dynamic and responsive elements, ensuring a visually appealing and user-friendly experience across different devices.</p>
+                    </div>
+                </div>
+                <!-- Grid -->
+                <div class="box" data-aos="fade-in">
+                    <div class="imgBox">
+                        <a href="grid-bemechanic/home.html" target="_blank">
+                            <img src="Images/BeMechanic_grid.jpeg" alt="FlexWebsite-Image">
+                        </a>
+                    </div>
+                    <div class="contentBox">
+                        <h4>Grid Website</h4>
+                        <p>The website has been skillfully built using HTML and CSS, with grid layout employed for its design structure. This strategic use of grid facilitates a cohesive and responsive layout, ensuring optimal visual presentation and seamless navigation across different devices and screen sizes.</p>
+                    </div>
+                </div>
+                <!-- BootStrap -->
+                <div class="box" data-aos="fade-in">
+                    <div class="imgBox">
+                        <a href="Bootstrap/index.html" target="_blank">
+                            <img src="Images/Bootstrap.jpeg" alt="FlexWebsite-Image">
+                        </a>
+                    </div>
+                    <div class="contentBox">
+                        <h4>Bootstrap Website</h4>
+                        <p>I have proficiently crafted a website utilizing Bootstrap, a responsive front-end framework, to ensure optimal user experience across various devices and screen sizes. Through meticulous design and implementation, the website boasts of sleek aesthetics, seamless navigation, and efficient functionality, reflecting a professional and modern digital presence.</p>
+                    </div>
+                </div>
+                <!-- JavaScript -->
+                <div class="box" data-aos="fade-in">
+                    <div class="imgBox">
+                        <a href="JavaScript/index.html" target="_blank">
+                            <img src="Images/JavaScript.jpeg" alt="FlexWebsite-Image">
+                        </a>
+                    </div>
+                    <div class="contentBox">
+                        <h4>JavaScript Project</h4>
+                        <p>The Interactive Web Application is a frontend project consisting of four interconnected webpages developed using HTML, CSS, and JavaScript. It offers seamless navigation, dynamic content rendering, and responsiveness across devices, marking the developer's debut in JavaScript programming.</p>
+                    </div>
+                </div>
+                <!-- Grid -->
+                <div class="box" data-aos="fade-in">
+                    <div class="imgBox">
+                        <a href="NarayanHospitalAhmedabad_grid/index.html" target="_blank">
+                            <img src="Images/NarayanHospitalNameImage.jpeg" alt="FlexWebsite-Image">
+                        </a>
+                    </div>
+                    <div class="contentBox">
+                        <h4>Grid Website</h4>
+                        <p>The website has been skillfully built using HTML and CSS, with grid layout employed for its design structure. This strategic use of grid facilitates a cohesive and responsive layout, ensuring optimal visual presentation and seamless navigation across different devices and screen sizes.</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="card">
-                <i class="fa fa-desktop "></i>
-                <h5>Web Designing</h5>
-                <div class="para">
-                    <p>
-                        Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.
-                    </p>
-                    <p>
-                        <a class="button" href="#">Read More</a>
-                    </p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <i class="fa fa-line-chart"></i>
-                <h5>Business Strategy</h5>
-                <div class="para">
-                    <p>
-                        Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.
-                    </p>
-                    <p>
-                        <a class="button" href="#">Read More</a>
-                    </p>
-                </div>
-            </div>
-
         </div>
-    </div>
-    <!-- Services Ends -->
-
-    <!-- Contact Me start -->
-    <div class="contactme" id="contactme">
-
-        <h2>Contact Me</h2>
-
-        <div class="contactdetails">
+        
+        <!-- Skills Start -->
+        <div class="mySkills" id="mySkills" data-aos="fade-in">
+            <h1>My Skills</h1>
             
-            <div class="address">
-                <a href="https://maps.app.goo.gl/UYwrf9RpVgHAtDx8A" target="_blank">
+            <div class="skills">
+                <!-- HTML/HTML5 -->
+                <div class="skill">
+                    <div class="skill-name">HTML / HTML5</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="85%" style="max-width:85%"></div>
+                    </div>
+                </div>
+                <!-- R&D -->
+                <div class="skill">
+                    <div class="skill-name">Researh & Developement</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="85%" style="max-width:85%"></div>
+                    </div>
+                </div>
+                <!-- CSS/CSS3 -->
+                <div class="skill">
+                    <div class="skill-name">CSS / CSS3</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="80%" style="max-width:80%"></div>
+                    </div>
+                </div>
+                <!-- Problem Solving -->
+                <div class="skill">
+                    <div class="skill-name">PROBLEM SOLVING</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="70%" style="max-width:70%"></div>
+                    </div>
+                </div>
+                <!-- JavaSCript -->
+                <div class="skill">
+                    <div class="skill-name">Java Script</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="60%" style="max-width:60%"></div>
+                    </div>
+                </div>
+                <!-- Creativity -->
+                <div class="skill">
+                    <div class="skill-name">Creativity</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="65%" style="max-width:65%"></div>
+                    </div>
+                </div>
+                <!-- BootStrap -->
+                <div class="skill">
+                    <div class="skill-name">Bootstrap</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="65%" style="max-width:65%"></div>
+                    </div>
+                </div>
+                <!-- Time Management -->
+                <div class="skill">
+                    <div class="skill-name">Time Management</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="70%" style="max-width:70%"></div>
+                    </div>
+                </div>
+                <!-- jQuery -->
+                <div class="skill">
+                    <div class="skill-name">jQuery</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="55%" style="max-width:55%"></div>
+                    </div>
+                </div>
+                <!-- Design Principles -->
+                <div class="skill">
+                    <div class="skill-name">Design Principles</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="75%" style="max-width:75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me Start -->
+        <div class="aboutMe" id="aboutMe" data-aos="fade-in">
+            <!-- My Image -->
+            <div class="myImage" data-aos="slide-down"></div>
+            <!-- About My-Self -->
+            <div class="myText" data-aos="slide-up">
+                <h1>About Me</h1>
+                <h4>Developer <span>& Designer</span></h4>
+                <p>As a seasoned Web designer and developer, I possess extensive expertise in HTML, CSS, HTML5, and CSS3, allowing me to craft sophisticated, responsive websites. My portfolio showcases a series of successful projects characterized by their modernity and user-centric design. Collaboratively, we can leverage my skills to create bespoke, innovative websites tailored to elevate your business's online presence and drive growth.</p>
+                <a href="Resume/Devarsh Resumw.pdf" target="_blank">Check My Resume</a>
+            </div>
+        </div>
+
+        <!-- Contact Me Start -->
+        <div class="contactMe" id="contactMe" data-aos="fade-in">
+            <h1>Contact Me</h1>
+            
+            <div class="contactCards" data-aos="slide-down">
+                <!-- Address -->
+                <div class="cBox" data-aos="fade-in">
+                    <a href="https://maps.app.goo.gl/UYwrf9RpVgHAtDx8A" target="_blank">
                     <i class="fa fa-map-marker"></i>
-                </a>
-                </i>
-                <h5>ADDERSS</h5>
-                <p>Om Surya Apartment, Gulbaitekra, Ahmedabad, Gujarat-380001</p>
+                    </a>
+                    </i>
+                    <h4>ADDERSS</h4>
+                    <p>Om Surya Apartment, Gulbaitekra, Ahmedabad, Gujarat-380001</p>
+                </div>
+                <!-- Mobile No. -->
+                <div class="cBox" data-aos="fade-in">
+                   <i class="fa fa-phone"></i>
+                    <h4>CONTACT NUMBER</h4>
+                    <p>+91 96387 05781</p>
+                </div>
+                <!-- Email Add. -->
+                <div class="cBox" data-aos="fade-in">
+                    <i class="fa fa-envelope-o"></i>
+                    <h4>EMAIL ADDERSS</h4>
+                    <p>devarshsoni001@gmail.com</p>
+                </div>
             </div>
-            
-            <div class="mobile">
-                <i class="fa fa-phone"></i>
-                <h5>CONTACT NUMBER</h5>
-                <p>+91 96387 05781</p>
-            </div>
-            
-            <div class="mailid">
-                <i class="fa fa-envelope-o"></i>
-                <h5>EMAIL ADDERSS</h5>
-                <p>devarshsoni001@gmail.com</p>
-            </div>
-        
-        </div>
-
-        <div class="inquiryform">
-
-            <div class="contactmeing"></div>
-            <div class="form">
+            <!-- FORM -->
+            <div class="cForm" data-aos="slide-up">
                 <form width="100%">
+                    <h4>Get In Touch</h4>
                     <input type="text" name="name" id="name" placeholder="Your Name">
                     <input type="email" name="email" id="mail" placeholder="Your E-mail">
                     <input type="text" name="subject" id="sub" placeholder="Subject">
                     <input type="text" name="message" id="message" placeholder="Message"></input>
-                    <button>SEND MESSAGE</button>
+                    <button>GET IN TOUCH</button>
                 </form>
             </div>
         </div>
 
-    </div>
-    <!-- Contact Me End -->
-
-    <!-- Footer Start -->
-    <footer>
-
-        <div class="social">
-            <a href="https://github.com/Devarsh001" target="_blank" class="fa fa-github fa-3x"></a>
-            <a href="https://www.linkedin.com/in/devarsh-soni-871141242/" target="_blank" class="fa fa-linkedin fa-3x"></a>
-        </div>
+        <!-- Footer Start -->
+        <footer>
+            <!-- SocialMedia Account Link -->
+            <div class="social">
+                <a href="https://www.instagram.com/devarsh2101?igsh=MTVyNGx4Ym0xcTZ6Nw%3D%3D&utm_source=qr" target="_blank" class="fa fa-instagram fa-2x"></a>
+                <a href="https://www.facebook.com/devarsh.soni.925?mibextid=LQQJ4d" target="_blank" class="fa fa-facebook fa-2x"></a>
+            </div>
+            <!-- Copy Rights -->
+            <div class="coprights">
+                <p>Copyright <span class="fa fa-copyright"> 2023</span> All rights reserved | This portfolio is made by <span><a href="#aboutMe" class="myname">Devarsh</a></span></p>
+            </div>
+            <!-- Back To Top -->
+            <div class="backToTop">
+                <a href="#home" class="fa fa-arrow-circle-o-up fa-2x"></a>
+            </div>
         
-        <div class="coprights">
-            <p>Copyright <span class="fa fa-copyright"> 2023</span> All rights reserved | This portfolio is made by <span><a href="#about" class="myname">Devarsh</a></span></p>
-        </div>
-    
-    </footer>
-    <!-- Footer Start -->
+        </footer>
+    </div>
 
+    <!-- SCRIPT START -->
+    <!-- cdn auto type -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed =  new Typed(".auto-type",{
+            strings : ["Designer", "Freelancer", "Developer", ""],
+            loop : true,
+            typeSpeed : 150,
+            backSpeed : 50,
+            backDelay : 500
+        })
+    </script>
+    <!-- Tilt-Box cdn -->
+    <script type="text/javascript" src="JS/vanilaTilt.js"></script>
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+	VanillaTilt.init(document.querySelectorAll(".cBox"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+    <!-- Scroll-Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            delay: 300,
+            duration: 300,
+            easing: 'ease'
+        });
+    </script>
+    <!-- Change Theme -->
+    <script>
+        let themeBtn = document.querySelector("#changeTheme");
+        let headerBG = document.querySelector("#home");
+        var root = document.querySelector(":root");
+        var rootStyles = getComputedStyle(root);
+        themeBtn.addEventListener("click", ()=>{
+            if (headerBG.style.background.match("../Images/headerBG.jpg")) {
+                headerBG.style.background = "url(../Images/BackGround3.png)";
+                headerBG.style.backgroundSize = "100% 100%";
+                headerBG.style.backgroundRepeat = "no-repeat";
+                root.style.setProperty("--red","#023858");
+                root.style.setProperty("--lightred","#348cbe");
+                root.style.setProperty("--white","#023b5c");
+                root.style.setProperty("--offwhite","#ffffff");
+                root.style.setProperty("--gray","#dcf9f6");
+                root.style.setProperty("--darkgray","#F8F6F0");
+            } else {
+                headerBG.style.background = "url(../Images/headerBG.jpg)";
+                headerBG.style.backgroundSize = "100% 100%";
+                headerBG.style.backgroundRepeat = "no-repeat";
+                root.style.setProperty("--red","#9c3631");
+                root.style.setProperty("--lightred","#a77674");
+                root.style.setProperty("--white","#ffffff");
+                root.style.setProperty("--offwhite","#f9feff");
+                root.style.setProperty("--gray","#151515");
+                root.style.setProperty("--darkgray","#101010");
+            }
+        })
+        
+        // Open Navbar
+        var resNav = document.querySelector(".responsiveNav");
+        let barsBtn = document.querySelector("#barsBtn");
+        barsBtn.addEventListener("click", ()=>{
+            if(resNav.style.right == "-100%") {
+                resNav.style.right = "0%";
+                resNav.style.transition = "500ms";
+            }
+            else {
+                resNav.style.right = "-100%";   
+            }
+        })
+        // Close the Navbar
+        let closeBtn = document.querySelector("#closeNav");
+        closeBtn.addEventListener("click", ()=>{
+            resNav.style.right = "-100%";
+        })
+    </script>
 </body>
 
 </html>

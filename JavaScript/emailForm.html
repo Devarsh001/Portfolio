@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- website logo -->
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- wesite title -->
+    <title>WeShare - File Sharing Made Easy</title>
+  </head>
+  <body>
+    <!-- fixed logo absolute -->
+    <header>
+      <a href="index.html"><img src="Images/logo.png" alt="" /></a>
+    </header>
+    <!-- main div full screen -->
+    <div class="container">
+      <!-- 1 -->
+      <section class="upload_container">
+        <!-- form to submit email -->
+        <form action="" method="post">
+          <!-- separate section for email inputs -->
+          <div class="shareviaemail">
+            <!-- sender email -->
+            <div class="send">
+              <label for="sender">Your Email</label>
+              <input type="email" name="senderMail" id="composer" required />
+            </div>
+            <!-- sender Password -->
+            <div class="senderPass">
+              <label for="sender">Your Password</label>
+              <input type="password" name="senderPass" id="composerpass" required />
+            </div>
+            <!-- receiver email -->
+            <div class="receive">
+              <label for="receiver">Receiver's Email</label>
+              <input type="email" name="receiverMail" id="customer" required />
+            </div>
+            <!-- button to send email from sender to receiver -->
+            <button>Send</button>
+          </div>
+        </form>
+      </section>
+      <!-- 2 -->
+      <!-- file sharing SVG image -->
+      <div class="SVGimage">
+        <img src="Images/undraw_filing_system.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="JavaScript/index.js"></script>
+  </body>
+</html>

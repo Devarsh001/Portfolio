@@ -1,90 +1,78 @@
-@media(max-width:1000px)
-{
-    .nav
-    {
+@media(max-width:1000px) {
+    .nav {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         text-align: center;
         gap: 1vw;
     }
-    .buynow
-    {
+    .buynow {
         text-align: center;
     }
 }
-@media(max-width:850px)
-{
-    
-    .h1
-    {
+@media(max-width:850px) {
+    .h1 {
         font-size: 6vw;
     }
-    .h2
-    {
+    .h2 {
         font-size: 5vw;
     }
-    .h3
-    {
+    .h3 {
         font-size: 4vw;
     }
-    .h4
-    {
+    .h4 {
         font-size: 3vw;
     }
-    .h5
-    {
+    .h5 {
         font-size: 2.5vw;
     }
-    .h6
-    {
+    .h6 {
         font-size: 2vw;
     }
-    p,button
-    {
+    p, button {
         font-size: 1.5vw;
     }
-    .aboutusimgtxt, .chiprallyimgs
-    {
+    .aboutusimgtxt, .chiprallyimgs {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
     }
-    .carspecification
-    {
+    .carspecification {
         display: none;
     }
-    .scrollformore
-    {
+    .scrollformore {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         padding: 5vw;
         gap: 2vw;
     }
-    .projectcars
-    {
+    .projectcars {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         gap: 5vw;
     }
-    .links-address
-    {
+    .links-address {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         text-align: center;
     }
-    .footlist
-    {
+    .footlist {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto auto;
     }
-    .copyright
-    {
+    .copyright {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         text-align: center;
         gap: 3vw;
     }
-    .list
-    {
+    .list {
         padding: 8px;
+    }
+}
+@media(max-width:650px) {
+    .list {
+        display: block;
+    }
+    .color {
+        display: none;
     }
 }

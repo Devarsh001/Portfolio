@@ -8,266 +8,200 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="fav-icon" href="images/companylogo.jpeg">
 </head>
 <body>
-
     <!-- header Start -->
     <header>
-
+        <!-- Navbar -->
         <div class="nav">
-            
+            <!-- Website Logo -->
             <div class="logo">
                 <img src="images/companylogo.jpeg" alt="">
             </div>
-            
+            <!-- Navigation List -->
             <div class="navbar">
-               
-                <ul>
                     <li class="home"><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Car Leasing</a></li>
-                    <li><a href="">Details</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Buy Now</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#carLeasing">Car Leasing</a></li>
+                    <li><a href="#details">Details</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="#buyNow">Buy Now</a></li>
                 </ul>
-            
             </div>
         </div>
-        
+        <!-- Section / SLider -->
         <div class="section">
-            
+            <!-- Image -->
             <img src="images/sectionBG.jpeg" alt="">
-            
+            <!-- Absolute Div -->
             <div class="carleasing">
                 <h1 class="h1">Finding you the</h1>
                 <h1 class="h1">best car leasing</h1>
                 <button>More</button>
             </div>
-
+            <!-- Absolute Div 2 -->
             <div class="scrollformore">
                 <h3 class="h3">SCROLL FOR MORE &nbsp;&nbsp;<span class="fa fa-long-arrow-down"></span> </h3>
             </div>
-        
         </div>
-
     </header>
-    <!-- header End -->
-
     <!-- Cars in stock Start -->
-    <div class="carsinstock">
-
+    <div class="carsinstock" id="carLeasing">
+        <!-- Title -->
         <h3 class="h3">Cars in stock</h2>
-
+        <!-- Stock Cars -->
         <div class="stock">
-
+            <!-- Car1 - Merc-->
             <div class="car">
-              
                 <div class="img">
                     <img src="images/Mercedes Benz.jpeg" alt="">
                 </div>
-              
                 <div class="cartxt">
                     <h3 class="h3">Mercedes Benz  Silver Knight</h3>
                     <p>$5,115</p>
                 </div>
-            
             </div>
-
+            <!-- Car2 - Audi -->
             <div class="car">
-            
                 <div class="img">
                     <img src="images/Audi A1.jpeg" alt="">
                 </div>
-            
                 <div class="cartxt">
                     <h3 class="h3">Audi A1 Contrast  Edition</h3>
                     <p>$5,115</p>
                 </div>
-            
             </div>
-
+            <!-- Car3 - BMW -->
             <div class="car">
-            
                 <div class="img">
                     <img src="images/BMW 4 GT.jpeg" alt="">
                 </div>
-            
                 <div class="cartxt">
                     <h3 class="h3">BMW 4 GT Full  Silver Edition</h3>
                     <p>$5,115</p>
                 </div>
-            
             </div>
-
+            <!-- More Cars Button(Non-Functional) -->
             <button>See More</button>
-
         </div>
-
     </div>
-    <!-- Cars in stock Ends -->
-
     <!-- Smart Calculator Start -->
     <div class="smartcalculator">
-
+        <!-- Mobile Image -->
         <div class="calculateimg">
             <img src="images/calculate.jpeg" alt="">
         </div>
-        
+        <!-- mart Calculator Text -->
         <div class="calculatortxt">
-            
             <p class="blutxt">Smart Calculator</p>
-            
             <h1 class="h1">How much did you pay?</h1>
-            
             <p class="bgskyblue">Lorem ipsum dolor sit amet Suspendisse in ante vel mauris molestie luctus</p>
-            
-            
             <p><strong>Mauris rhoncus orc</strong>i in imperdiet placerat. Vestibulum  euismod nisl suscipit ligula volutpat, a feugiat urna maximus.</p>
-            
-
             <button>More</button>
-        
         </div>
-
     </div>
-    <!-- Smart Calculator Ends -->
-
     <!-- Most Popular Start -->
-    <div class="mostpopular">
-
+    <div class="mostpopular" id="buyNow">
         <p>Welcome to BeLease</p>
-        
         <h1 class="h1">Most Popular</h1>
-
+        <!-- Popular Cars -->
         <div class="popularcars">
-
+            <!-- Car1 - G.Class -->
             <div class="gclass">
-                
                 <img src="images/Mercedes-G_Class.jpeg" alt="">
-                
                 <div class="popularcarstxt">
                     <h3 class="h3">Mercedece  G Class</h3>
                 </div>
-            
             </div>
-            
+            <!-- Car2 (2-Cars)-->
             <div class="suvgt">
-            
+                <!-- Car2.1 - Toyota.SUV -->
                 <div class="toyota">
-                    
                     <img src="images/Toyota 4Runner SUV.jpeg" alt="">
-                    
                     <div class="popularcarstxt">
                         <h3 class="h3">Toyota 4Runner SUV</h3>
                     </div>
-                
                 </div>
-            
+                <!-- Car2.2 - Merc.GT -->
                 <div class="amg">
-                   
                     <img src="images/Mercedes-Benz AMG GT.jpeg" alt="">
-                   
                     <div class="popularcarstxt">
                         <h3 class="h3">Mercedes-Benz AMG GT</h3>
                     </div>
-                
                 </div>
-            
             </div>
         </div>
     </div>
-    <!-- Most Popular Ends -->
-
     <!-- Join Conversation Start -->
-    <div class="joinconversation">
-
+    <div class="joinconversation" id="details">
         <h1 class="h1">Join the conversation.</h1>
         <h1 class="h1">Join us.</h1>
-        
+        <!-- Join Us -->
         <div class="since2005">
-        
+            <!-- Since 2005 Txt. -->
             <div class="launchtxt">
-                
                 <h3 class="h3">We are Belease <br>— Since our launch <br> in 2005.</h3>
-                
                 <p>Nulla mauris dolor, gravida a varius blandit.</p>
-                
                 <button>About us</button>
-            
             </div>
-        
+            <!-- Join.Convo.Img -->
             <div class="launchimg">
                 <img src="images/Join Conversation.jpeg" alt="">
             </div>
-        
         </div>
     </div>
-    <!-- Join Conversation End -->
-
     <!-- Click to start chat Starts -->
-    <div class="startchat">
-
+    <div class="startchat" id="aboutUs">
+        <!-- Main -->
         <div class="threediv">
-
+            <!-- 1.RegularPrice -->
             <div class="clickhere">
-               
                 <h1 class="h1 prpltxt">1</h1>
-               
                 <h3 class="h3">Regular Price  Updates</h3>
-               
                 <p>Ut ultricies imperdiet sodales. Aliquam  fringilla aliquam ex sit amet elementum.</p>
-            
             </div>
-
+            <!-- 2.BestFinanceOptions -->
             <div class="clickhere">
-            
                 <h1 class="h1 prpltxt">2</h1>
-            
                 <h3 class="h3">Best Finance  Options</h3>
-            
                 <p>Ut ultricies imperdiet sodales. Aliquam  fringilla aliquam ex sit amet elementum.</p>
-            
             </div>
-
+            <!-- 3.HugeSavings -->
             <div class="clickhere">
-            
                 <h1 class="h1 prpltxt">3</h1>
-            
                 <h3 class="h3">Huge  Savings</h3>
-            
                 <p>Ut ultricies imperdiet sodales. Aliquam  fringilla aliquam ex sit amet elementum.</p>
-            
             </div>
-
+            <!-- StartChat.Button -->
             <button>Click Here to start a chat</button>
-
         </div>
     </div>
-    <!-- Click to start chat Ends -->
-
     <!-- Footer Start -->
-    <footer>
-        
+    <footer id="footer">
+        <!-- Footer.1 - Logo.&.Text -->
         <div class="logotxt">
-
+            <!-- Logo.Div -->
             <div class="footerlogo">
-
+                <!-- LogoImage -->
                 <div class="footerimg">
                     <img src="images/Footerlogo.jpeg" alt="">
                 </div>
+                <!-- Logo.Txt -->
                 <div class="footertxt">
                     <h3 class="h3">Level 13, 2 Elizabeth St,<br> Melbourne, Victoria <br> Australia </h3>
                 </div>
-        
             </div>
-
+            <!-- NewsLetter.Div -->
             <div class="newsletter">
                 <h3 class="h3">Newsletter</h3>
+                <!-- User-Email -->
                 <div class="emailbutton">
                     <input type="email" name="" placeholder="Your Email">
                     <button>Send</button>
                 </div>
                 <p>Lorem ipsum dolor mit</p>
+                <!-- PhoneNo.&.EmailAdd -->
                 <div class="phemail">
                     <p>
                         <span class="fa fa-phone"> +91-40402929</span>
@@ -276,27 +210,22 @@
                     </p>
                 </div>
             </div>
-            
         </div>
-
+        <!-- CopyRights.Div -->
         <div class="copyrights">
-
+            <!-- CopyRight.Txt -->
             <div class="copyrighttxt">
-
                 <p><span class="fa fa-copyright"> 2023 Betheme by <span class="prpltxt">Muffin group</span> <strong>|</strong> All Rights Reserved <strong>|</strong> Powered by <span class="prpltxt">WordPress</span></span></p>
             </div>
+            <!-- Social.Links -->
             <div class="icons">
                 <p>
                     <span class="fa fa-facebook"></span>
                     <span class="fa fa-twitter"></span>
                     <span class="fa fa-vimeo"></span>
-                    <span class="fa fa-chevron-circle-up"></span>
                 </p>
             </div>
-
         </div>
-        
     </footer>
-    <!-- Footer Ends -->
 </body>
 </html>
